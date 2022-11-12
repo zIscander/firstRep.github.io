@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: tahoma, sans-serif;
+	line-height: 1.5;
+}
+.section,.header, .feature-box{
+	margin: 70px auto;
+	font-size: 24px;
+	line-height: 1.5;
+}
+.header span {
+	display: block;
+	font-weight: 900;
+}
+
+/*Блок формы и видео*/
+
+.video {
+	margin-bottom: 20px;
+}
+form {
+	border: 5px solid #472cc3;
+	padding: 30px 15px;
+}
+form h1 {
+	font-size: 20px;
+	font-weight: 900;
+	margin-bottom: 40px;
+}
+.form input {
+	margin-bottom: 20px;
+}
+.form-btn {
+	margin: 5px auto;
+	background-color: #472cc3;
+}
+
+/*Блок преимуществ*/
+
+.feature-title {
+	font-size: 24px;
+	font-weight: 900;
+}
+.feature-txt {
+	margin-top: 20px;
+	line-height: 1.3;
+	font-size: 16px;
+	font-weight: 900;
+}
+
+/*Блок с клиентами*/
+
+.client-txt {
+	font-weight: 900;
+}
+.cl-img-box {
+	margin: 33px auto;
+}
+
+.col-sm-12{
+	margin: 10px auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
