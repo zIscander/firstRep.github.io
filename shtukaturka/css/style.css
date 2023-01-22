@@ -482,7 +482,7 @@ textarea:focus {
 }
 .problem-woman {
   position: absolute;
-  top: 70%;
+  top: 65%;
   left: 37%;
   width: 20%;
   -webkit-transform: translateY(-50%);
