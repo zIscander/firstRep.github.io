@@ -203,7 +203,7 @@
 
 // Меню для маленьких экранов
 	
-	.mini-nav-link {
+	.mini-nav-link, .mini-nav, ul, li {
 		// скрытие мини ссылок
 		display: none;
 	}
@@ -613,10 +613,12 @@
 					display: block;
 					border: 2px solid @light;
 					li {
+						display: block;
 						padding-right: 1.5rem;
 						font-size: 1.8rem;
 						padding-bottom: 1rem;
 						a {
+							background: transparent;
 							transition:  0.4s ;
 							&:hover {
 								color: darken(@light, 40%);
@@ -631,11 +633,13 @@
 				opacity: 0;
 
 				&-active {
+					display: block;
 					transform: scaleY(1), translateY(0);
 					opacity: 1;
 				}
 				a {
 					display: inline-block;
+
 
 				}
 				&-btn {
