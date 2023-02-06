@@ -18,7 +18,7 @@
 		<div class="container">
 			<div class="row">
 		
-				<div class="col-xl-1 col-md-2">
+				<div class="col-xl-1 col-md-2 col-sm-2 col-3">
 					<div class="logo">
 						<a href="#">
 							<img src="img/logo-white.png" alt="Логотип">
@@ -27,7 +27,7 @@
 					</div>
 				</div>
 	
-				<div class="col-9 offset-1">
+				<div class="col-lg-9 offset-lg-1 col-md-6 offset-md-4 col-sm-5 offset-sm-2 col-8 offset-0">
 					<div class="nav-block">
 							<a href="#main" class="nav-link">Главная</a>
 							<a href="#about" class="nav-link">О нас</a>
@@ -37,21 +37,18 @@
 							<a href="#contacts" class="nav-link">Контакты</a>
 
 							<!-- Меню для маленьких экранов -->
-							<a class="mini-nav-btn"><span></span></a>
 							<div class="mini-nav">
+								<a class="mini-nav-btn"><span></span></a>
 								
 								<ul>
 									<li><a href="#main" class="mini-nav-link">Главная</a></li>
 									<li><a href="#about" class="mini-nav-link">О нас</a></li>
 									<li><a href="#features" class="mini-nav-link">Приемущества</a></li>
-									<li><a href="#rates" class="mini-nav-link">Тарифы</a></li>
+									<li><a href="#rates" class="mini-nav-link">Решения</a></li>
 									<li><a href="#stat" class="mini-nav-link">Статистика</a></li>
 									<li><a href="#contacts" class="mini-nav-link">Контакты</a></li>
 								</ul>
 
-
-
-								
 							</div>
 							<!-- Меню для маленьких экранов -->
 
@@ -206,7 +203,7 @@
 						<img src="img/logo-white.png" alt="">
 						<h3>Быстрый старт</h3>
 						<p>Инвестиции от 70 тыс.₽ <br>Доходность от 57%/год</p>
-						<button class="all-btn">Выбрать</button>
+						<button class="all-btn"><a href="#form">Выбрать</a></button>
 					</div>
 				</div>
 
@@ -215,7 +212,7 @@
 						<img src="img/logo-silver.png" alt="">
 						<h3>Пассивный доход</h3>
 						<p>Инвестиции от 1 млн.₽ <br>Доходность от 17%/год</p>
-						<button class="all-btn">Выбрать</button>
+						<button class="all-btn"><a href="#form">Выбрать</a></button>
 					</div>
 				</div>
 
@@ -224,7 +221,7 @@
 						<img src="img/logo-gold.png" alt="">
 						<h3>Премиум</h3>
 						<p>Инвестиции от 3 млн.₽ <br>Доходность от 61%/год</p>
-						<button class="all-btn">Выбрать</button>
+						<button class="all-btn"><a href="#form">Выбрать</a></button>
 					</div>
 				</div>
 
@@ -342,17 +339,17 @@
 
 				</div>
 
-				<div class="col-md-4 offset-md-1 col-sm-8 offset-sm-2">
-					<div class="form">
+				<div class="col-md-4 offset-md-1 col-sm-8 offset-sm-2 col-10 offset-1">
+					<div class="form" id="form">
 						<h4 class="form-title">Отправьте заявку <br> и Мы свяжемся с Вами!</h4>
 						<form action="#" method="#">
-							<label for="#">Ваше имя</label>
-							<input type="text" name="user_name" placeholder="Александр">
-							<label for="#">Ваш номер</label>
-							<input type="phone" name="user_phone" placeholder="+7 999 999 99 99">
+							<label for="#">Ваше имя<sup>*</sup></label>
+							<input type="text" name="user_name" placeholder="Александр" required pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы">
+							<label for="#">Ваш номер<sup>*</sup></label>
+							<input type="number" name="user_phone" placeholder="8 999 999 99 99" required>
 							<label for="#">Ваш e-mail</label>
 							<input type="email" name="user_email" placeholder="sales@stellar-pro.org">
-							<input class="all-btn" type="submit" value="Отправить">
+							<button class="all-btn" type="submit">Отправить</button>
 						</form>
 					</div>
 				</div>
@@ -361,6 +358,33 @@
 		</div>
 	</section>
 
+<!-- Футер -->
+	
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 col-sm-3 col-12">
+					<p><a href="mailto:sales@stellar-pro.org">sales@stellar-pro.org</a></p>
+					<p><a href="tel:+79992867463">+7 (999) 286 74 63</a></p>
+				</div>
+				<div class="col-md-2 col-sm-3 col-12 text-center">
+					<p class="txt-s"><a href="http://stellar-pro.org/#">Оферта</a></p>
+					<p class="txt-s"><a href="http://stellar-pro.org/#">Политика конфиденциальности</a></p>
+				</div>
+				<div class="col-md-2 col-sm-3 col-12 text-center">
+					<p class="txt-s"><a href="http://stellar-pro.org/docs/Informacionnaya_politika.pdf">Ведение деятельности</a></p>
+					<p class="txt-s"><a href="http://stellar-pro.org/docs/Informacionnaya_politika.pdf">Информационная политика</a></p>
+				</div>
+				<div class="col-md-2 col-sm-3 col-12 text-center">
+					<p class="txt-s"><a href="http://stellar-pro.org/docs/Rekvizity.pdf">Карточка компании (реквизиты)
+	Ведение деятельности Информационная политика</a></p>
+				</div>
+				<div class="col-md-4 col-12 text-end">
+					<p>Дизайн и разработка сайта: <a href="https://vk.com/ziscander">Александр Шмик</a></p>
+					<p>Stellar <sup>©</sup>, 2023</p>
+				</div>
+		</div>
+	</footer>
 
 
 <!-- Подключение стилей слайдера слик -->
