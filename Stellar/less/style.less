@@ -53,7 +53,7 @@
 	.down-btn {
 		position: relative;
 		display: inline-block;
-		margin-top: 3rem;
+		margin-top: 2rem;
 		width: 5rem;
 		height: 5rem;
 		border: 2px solid @color-btn;
@@ -159,35 +159,6 @@
 				transform: scaleX(1);
 			}
 		}
-		&-contacts {
-			text-align: right;
-			a, button{
-				position: relative;
-				display: inline-block;
-				margin-top: 2rem;
-				font-size: 1.4rem;
-				cursor: pointer;
-				z-index: 1;
-			}
-			a{
-				margin-right: 1.8rem;
-			}
-			a::before{
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				width: 100%;
-				height: 0.2rem;
-				background: @light;
-				transition: 0.4s;
-				transform: scaleX(0);
-			}
-			a:hover:before {
-				transform: scaleX(1);
-			}
-		}
-
 	}
 
 // Меню для маленьких экранов
@@ -199,6 +170,7 @@
 		background:   rgba(94, 69, 14, 0.5) ;
 		border-radius: 5rem;
 		border: 2px solid @light;
+		cursor: pointer;
 		&-btn {
 			position: relative;
 			width: 30rem;
@@ -306,7 +278,7 @@
 		&-title {
 			position: relative;
 			z-index: 1;
-			margin-top: 10rem;
+			margin-top: 8rem;
 			font-size: 4rem;
 			line-height: 1.4;
 			font-weight: 800;
@@ -467,7 +439,7 @@
 			bottom: 0;
 			width: 100%;
 			height: 100%;
-			z-index: 0;
+			z-index: -1;
 			background: url(../img/r-bg.png) no-repeat center;
 			background-size: cover;
 		}
@@ -501,7 +473,8 @@
 		}
 		&-sub-title {
 			position: relative;
-			margin-top: 4rem;
+			margin: 4rem 0 0;
+
 			font-size: 2.2rem;
 			color: @light;
 			z-index: 1;
@@ -534,7 +507,100 @@
 		}
 	}
 
-// Шестая секция Контакты
+// Шестая секция форма и отзывы
+	
+	.forms {
+		position: relative;
+		background-color: rgba(150, 150, 150, 1);
+		z-index: 0;
+		color: @light;
+		&::before {
+			content: '';
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			width: 100%;
+			height: 100%;
+			transform: rotateX(180deg);
+			background: url(../img/c-bg.png) no-repeat center;
+			background-size: cover;
+		}
+		.title {
+			text-align: center;
+			margin-bottom: 4rem;
+		}
+		iframe {
+			margin-top: -2rem;
+			border-radius: 5rem;
+			padding: 2rem;
+			box-sizing: content-box;
+		}
+		.form {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			border: 2px solid @light;
+			border-radius: 5rem;
+
+			&-title {
+				text-align: center;
+				font-size: 2.6rem;
+				line-height: 1.4;
+				margin: 2rem auto;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				label, input {
+					text-align: center;
+					margin: 0.5rem auto;
+					display: block;
+					font-size: 2rem;
+				}
+
+				input {
+					margin-bottom: 2.6rem;
+					width: 60%;
+					height: 4rem;
+					border: none;
+					border-radius: 5rem;
+					font-size: 1.6rem;
+					&:focus {
+					outline: none;
+					}
+					&:not(:focus):invalid, &:not(:focus):valid {
+						box-shadow: none;
+					}
+					&:valid {
+						box-shadow: 0 0 1.5rem #2ed573;
+					}
+					&:invalid {
+						box-shadow: 0 0 1.5rem #ff5252;
+					}
+				}
+				.all-btn {
+					display: block;
+					margin: 5rem auto 3rem;
+					color: @light;
+					border: 2px solid @light;
+					font-size: 1.6rem;
+					height: 4rem;
+					width: 60%;
+					&:hover {
+						background-color: @light;
+						color: @color-btn;
+					}
+				}
+			}
+			sup {
+				color: #ff5252;
+			}
+		}
+	}
+
+// Седьмая секция Контакты
 
 	.contacts {
 		position: relative;
@@ -546,7 +612,7 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			z-index: 0;
+			z-index: -1;
 			width: 100%;
 			height: 100%;
 			background: url(../img/c-bg.png) no-repeat center;
@@ -564,14 +630,42 @@
 			font-size: 4rem;
 		}
 		.map {
-			position: relative;
-			z-index: 1;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 60%;
+			height: 100%;
 		}
-		p {
-			position: relative;
-			z-index: 1;
+
+		.mapTitle {
+		    position: absolute;
+		    z-index: 1000;
+		    color: @light;
+		    box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 5px;
+		    display: none;
+		    padding: 5px 20px;
+		    border-radius: 5px;
+				background-color: rgba(94, 69, 14, 0.8);
+		    border-width: 1px;
+		    border-style: solid;
+		    border-color: rgb(204, 204, 204);
+		    border-image: initial;
+		}
+		.contacts-txt {
 			font-size: 2rem;
 			margin: 2rem 0;
+			&-right {
+				margin-left: 8rem;
+			}
+			i {
+				margin-right: 1rem;
+				color: @color-btn;
+				font-size: 2.5rem;
+				&:before {
+				vertical-align: middle;
+
+				}
+			}
 			strong {
 				font-weight: 800;
 			}
@@ -579,63 +673,7 @@
 				color: @light;
 			}
 		}
-		.form {
-			position: relative;
-			z-index: 1;
-			padding: 2rem;
-			border: 2px solid @light;
-			border-radius: 5rem;
-			&-title {
-				text-align: center;
-				font-size: 2.6rem;
-				line-height: 1.4;
-				margin-bottom: 4.8rem;
-			}
-			form {
-				label, input {
-					text-align: center;
-					margin: 0.5rem auto;
-					display: block;
-					font-size: 1.8rem;
-				}
-
-				input {
-					margin-bottom: 2.6rem;
-					width: 60%;
-					height: 3rem;
-					border-radius: 5rem;
-					border: none;
-					font-size: 1.6rem;
-					&:focus {
-					outline: none;
-					}
-					&:not(:focus):invalid, &:not(:focus):valid {
-						box-shadow: none;
-					}
-					&:valid {
-						box-shadow: 0 0 1.5rem #2ed573;
-					}
-					&:invalid {
-						box-shadow: 0 0 1.5rem #ff5252;
-					}
-				}
-				.all-btn {
-					display: block;
-					margin: 3rem auto;
-					color: @light;
-					font-size: 1.6rem;
-					height: 4rem;
-					width: 60%;
-					&:hover {
-						background-color: @color-btn;
-						color: @light;
-					}
-				}
-			}
-			sup {
-				color: #ff5252;
-			}
-		}
+		
 	}
 
 // Footer 
@@ -741,6 +779,9 @@
 				&-block {
 					img {
 						width: 16rem;
+					}
+					p {
+						min-height: 0rem;
 					}
 				}
 			}
