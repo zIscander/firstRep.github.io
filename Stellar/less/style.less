@@ -443,21 +443,21 @@
 			background-size: cover;
 		}
 		&-block {
-			position: relative;
-			z-index: 1;
+			border: 1px solid #000;
+
 			color: @light;
 			img {
 				width: 20rem;
 				margin-bottom: 3rem;
 			}
 			h3 {
-
+				min-height: 5rem;
 				font-size: 2.4rem;
-				margin-bottom: 2rem;
+
 			}
 			p {
 				font-size: 1.8rem;
-				margin-bottom: 4rem;
+				min-height: 11rem;
 			}
 			.all-btn {
 				font-size: 2rem;
@@ -470,6 +470,7 @@
 					}
 				}
 			}
+
 		}
 		&-sub-title {
 			position: relative;
@@ -609,6 +610,7 @@
 		background-color: rgba(150, 150, 150, 1);
 		z-index: 1;
 		color: @light;
+		padding: 0;
 		&::before {
 			content: '';
 			position: absolute;
@@ -744,12 +746,9 @@
 					}
 				}
 			}
-			.contacts {
-				p {
-					font-size: 1.8rem;
-				}
+			.forms {
 				.form {
-					padding: 1rem;
+					min-height: 60rem;
 				}
 			}
 		}
@@ -760,10 +759,6 @@
 				&-link {
 				display: none;
 				}
-			}
-
-			.mini-nav {
-				
 			}
 			.about {
 				.down-btn {
@@ -785,26 +780,38 @@
 					img {
 						width: 16rem;
 					}
+					h3 {
+						min-height: 6rem;
+
+					}
 					p {
-						min-height: 0rem;
+						min-height: 14rem;
 					}
 				}
 			}
+			.forms {
+				&:before {
+					background: none;
+				}
+				text-align: center;
+				.title {
+					font-size: 3rem;
+					margin-bottom: 5rem;
+				}
+				iframe {
+					padding: 0;
+					margin-bottom: 10rem;
+				}
+			}
 			.contacts {
-					p {
-						font-size: 1.4rem;
-					}
-				.form {
-					padding: 2rem;
-					&-title {
-						font-size: 2rem;
-						margin-bottom: 3rem;
-					}
-					form {
-						input {
-							width: 100%;
-						}
-					}
+				&:before {
+					background: none;
+				}
+				.sub-title {
+					font-size: 3rem;
+				}
+				.contacts-txt {
+					font-size: 1.6rem;
 				}
 			}
 			.footer {
@@ -833,11 +840,10 @@
 					z-index: 1;
 				}
 			}
-			.mini-nav {
-				
-
-			}
 			.main {
+				&-title {
+					margin-top: 3rem;
+				}
 				.down-btn {
 					margin-top: -2.5rem;
 				}
@@ -878,28 +884,27 @@
 				}
 			}
 			.contacts {
-					p {
-						text-align: center;
-						font-size: 2rem;
-					}
-				.form {
-					margin-top: 4rem;
-					padding: 2rem;
-					&-title {
-						font-size: 2rem;
-						margin-bottom: 3rem;
-					}
-					form {
-						input {
-							width: 100%;
-						}
+				min-height: 58.4rem;
+				.sub-title {
+					text-align: center;
+				}
+				.contacts-txt {
+					font-size: 2rem;
+				}
+				margin-bottom: 31.4rem;
+				.map {
+					width: 100%;
+					height: 33rem;
+					top: 57rem;
+					iframe {
+						border-top-left-radius: 0;
 					}
 				}
 			}
 		}
 
 
-	// Экраны SX
+	// Экраны XS
 		@media (max-width: 575px) {
 			.nav {
 				.logo {
@@ -956,6 +961,9 @@
 					border: 2px dotted @light;
 					border-radius: 5rem;
 				}
+				p {
+					min-height: 6rem;
+				}
 			}
 			.stat {
 				h3 {
@@ -968,9 +976,6 @@
 					font-size: 1.8rem;
 
 				}
-			}
-			.contacts {
-				text-align: center;
 			}
 		}
 
@@ -1008,7 +1013,8 @@
 						}
 					}
 				}
-			}			.main {
+			}			
+			.main {
 				&-title {
 					font-size: 3.2rem;
 				}
@@ -1025,6 +1031,11 @@
 				}
 				p {
 					font-size: 1.2rem;
+				}
+			}
+			.contacts {
+				.map {
+					top: 65rem;
 				}
 			}
 			.footer {
