@@ -2,7 +2,7 @@
 	@color-txt: #3d3d3d;
 	@light: #fff;
 	@color-btn: #5e450e;
-	@color-bg: #ededed;
+	@color-bg: #969696;
 
 // Общие стили
 	*, *::befor, *::after {
@@ -294,12 +294,20 @@
 	
 	.about {
 		box-shadow: -1px -1px 15px 3px black;
-		background-color: @color-bg;
+		background-color: @light;
 		.title {
 			margin-bottom: 3rem;
 			margin-left: 3rem;
 		}
 		.sub-title {
+			&_lite {
+				font-size: 2rem;
+				.fi {
+					margin-right: 1rem;
+					vertical-align: middle;
+					font-size: 3rem;
+				}
+			}
 		}
 	}
 
@@ -426,7 +434,7 @@
 	.rates {
 		position: relative;
 		text-align: center;
-		background-color: rgba(150, 150, 150, 1);
+		background-color: @color-bg;
 		z-index: 1;
 		h2 {
 			color: @light;
@@ -510,7 +518,7 @@
 	
 	.forms {
 		position: relative;
-		background-color: rgba(150, 150, 150, 1);
+		background-color: @color-bg;
 		z-index: 0;
 		color: @light;
 		&::before {
@@ -605,7 +613,7 @@
 
 	.contacts {
 		position: relative;
-		background-color: rgba(150, 150, 150, 1);
+		background-color: @color-bg;
 		z-index: 1;
 		color: @light;
 		padding: 0;
@@ -939,9 +947,6 @@
 					}
 				}
 			}
-			.about {
-				text-align: center;
-			}
 			.features {
 				text-align: center;
 				&-block {
@@ -1048,6 +1053,11 @@
 				text-align: center;
 			}
 		}
+
+
+
+
+
 
 
 
