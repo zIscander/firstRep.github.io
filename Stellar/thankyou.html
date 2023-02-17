@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Заголовок</title>
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,20 +12,25 @@
 
 <!-- Первая секция Главная -->
 
-	<section class="class">
+	<section class="thx">
 		<div class="container">
 
-			<div class="section-header">
-				<h1 class="title text-center">Спасибо!</h1>
-				<p class="sub-title">Sub-title</p>
+			<div class="section-header section-header_thx wow fadeIn">
+				<h1 class="title">Спасибо Вам!</h1>
+				<p class="sub-title">Заявка отправлена! <br>Менеджер свяжется с Вами!</p>
+				<a href="index.html" class="thx__link">Вернуться на сайт!</a>
 			</div>
 
-			<div class="row">
-
-			</div>
+			
 
 		</div>
 	</section>
+
+<!-- Подключение анимации -->
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 
 
 </body>
