@@ -102,7 +102,7 @@
 				<div class="row">
 
 					<div class="col-xl-5 offset-xl-0 col-lg-10 offset-lg-1 col-md-10 offset-md-0 col-sm-10 offset-sm-1 col-10">
-						<iframe width="600" height="350" src="https://www.youtube.com/embed/AX3R9XvKRbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<iframe src="https://www.youtube.com/embed/AX3R9XvKRbY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 					</div>
 
 					<div class="col-xl-5 offset-xl-2 col-md-12">	
@@ -337,12 +337,12 @@
 					<div class="form wow bounceInRight" data-wow-duration="2s" data-wow-delay="0.2s">
 						<h4 class="form-title">Отправьте заявку <br> и Мы свяжемся с Вами!</h4>
 						<form action="telegram.php" method="POST">
-							<label for="user_name">Ваше имя<sup>*</sup></label>
-							<input type="text" name="user_name" placeholder="Александр" required pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы">
-							<label for="user_phone">Ваш номер<sup>*</sup></label>
-							<input type="number" name="user_phone" placeholder="8 999 999 99 99" required>
-							<label for="user_email">Ваш e-mail</label>
-							<input type="email" name="user_email" placeholder="sales@stellar-pro.org">
+							<label for="name">Ваше имя<sup>*</sup></label>
+							<input id="name" type="text" name="user_name" placeholder="Александр" required pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы">
+							<label for="phone">Ваш номер<sup>*</sup></label>
+							<input id="phone" type="number" name="user_phone" placeholder="8 999 999 99 99" required>
+							<label for="email">Ваш e-mail</label>
+							<input id="email" type="email" name="user_email" placeholder="sales@stellar-pro.org">
 							<button class="all-btn" type="submit">Отправить</button>
 						</form>
 					</div>
@@ -373,7 +373,7 @@
 
 						<p class="contacts-txt"><strong><i class="fi fi-brands-youtube"></i>Мы на </strong><a href="https://youtube.com/@stellar-pro">YouTube</a></p>
 
-						<p class="contacts-txt"><strong><i class="fi fi-brands-vk"></i>Мы ВКонтакте:</strong> <br>
+						<p class="contacts-txt"><strong><i class="fi fi-brands-vk"></i>Мы ВКонтакте:</strong></p>
 
 							<div class="row">	
 
@@ -390,14 +390,13 @@
 								</div>
 
 							</div>
-						</p>
-
+						
 				</div>
 			</div>
 
 		</div>
 		<div class="map wow fadeInRight" data-wow-duration="2s" data-wow-delay="0.2s" id="wrapMap">
-			<iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afcc35f1a09ec5b14db96225ab72de66f9472fe3943fe58ec95fd29127407b291&amp;source=constructor" width="100%" height="100%" frameborder="0">
+			<iframe style="pointer-events: none;" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afcc35f1a09ec5b14db96225ab72de66f9472fe3943fe58ec95fd29127407b291&amp;source=constructor">
 			</iframe>
 		</div>
 	</section>
