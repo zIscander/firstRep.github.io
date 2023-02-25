@@ -1,11 +1,11 @@
 // Шрифты
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
+// @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
 
 
 // Цвета
 $txt: #000
-$milk: #ffffe0 
-$color-btn: #fff200
+$milk: #ffffed 
+$color-btn: #6633ff
 
 
 
@@ -20,13 +20,8 @@ html
 	font-size: 10px
 
 body
-	font-family: 'Lobster', cursive
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
-
-.title
-	text-align: center
-	font-size: 3rem
-	transition: all 0.5s
+	// font-family: 'Lobster', cursive
+	background-color: $milk
 
 a, a:focus, a:visited, a:hover
 	color: $txt
@@ -37,17 +32,24 @@ hr
 	color: $txt
 	margin: 0 auto
 
-.container_milk
-	// background-color: rgba($txt, 0.2)
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 80%)
-	margin: 3rem auto
-	border-radius: 4rem
-	box-shadow:  300px 100px 20px rgba(0, 0, 0, .3)
-
+.fi
+	font-size: 2.5rem
+	&-brands
+		&-whatsapp
+			transition: all 0.5
+			&:hover
+				color: #4cd137
+		&-vk
+			transition: all 0.5
+			&:hover
+				color: #0652dd
+		&-instagram
+			transition: all 0.5
+			&:hover
+				color: #D980FA
 
 // Header
 .header 
-	height: 6rem
 	display: flex
 	align-items: center
 
@@ -55,29 +57,50 @@ hr
 	&-img 
 		width: 8rem
 
-.menu
+.social
 	display: flex
 	align-items: center
-	justify-content: space-around
+	justify-content: space-between
 	height: 100%
-	text-align: center
 	&-link
 		font-size: 1.8rem
+		text-transform: uppercase
+		font-weight: 500
 		transition: all 0.4s
 		&:hover
 			color: $color-btn
 			text-shadow: 0 0 1.5rem $color-btn
+		&__whatsapp
+			transition: all 0.5
+			&:hover
+				text-shadow: 0 0 1.5rem #4cd137
+		&__vk
+			transition: all 0.5
+			&:hover
+				text-shadow: 0 0 1.5rem #0652dd
+		&__instagram
+			transition: all 0.5
+			&:hover
+				text-shadow: 0 0 1.5rem #d980fa
+
 	&__btn
 		border: 2px solid #000
-		padding: 0.5rem 2rem
+		padding: 0.1rem 2rem
 		border-radius: 3rem
 		transition: all 0.4s
 		&:hover
 			box-shadow: inset 0 0 1.5rem $color-btn,  0 0 1.5rem $color-btn
-			color: $color-btn
+			color: $milk
+			background-color: $color-btn
 			text-shadow: 0 0 1.5rem $color-btn
 			border: 2px solid $color-btn
-
+.nav-list
+	display: flex
+	justify-content: space-around
+	text-align: center
+	margin-top: 1rem
+	list-style: none
+	&-item
 
 // Главная
 .main
@@ -96,42 +119,4 @@ hr
 		&-img
 			width: 60rem
 	
-
-//  О нас
-.about
-	&:hover .title
-		color: $milk
-	&-block
-		// background-color: rgba($txt, 0.2)
-		background-image: linear-gradient(135deg, #667eea 0%, #764ba2 80%)
-		margin: 3rem auto
-		padding: 1rem
-		border-radius: 4rem
-		box-shadow:  300px 100px 20px rgba(0, 0, 0, .3)
-		transition: all 0.5s
-		&:hover
-			transform: scale(1.04)
-			& .about-block__subtitle
-				color: $milk
-		&__img
-			width: 24rem
-			border-radius: 4rem
-		&__title
-			color: $milk
-			font-size: 3rem
-			text-align: right
-		&__subtitle
-			padding: 0.8rem
-			color: $txt
-			font-size: 2rem
-			letter-spacing: 1px
-			transition: all 0.5s
-
-
-
-
-
-
-
-// Портфолио
 
