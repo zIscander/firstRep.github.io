@@ -24,7 +24,6 @@ body
 	background-color: $milk
 
 a, a:focus, a:visited, a:hover
-	color: $txt
 	text-decoration: none
 
 hr 
@@ -34,17 +33,16 @@ hr
 
 .fi
 	font-size: 2.5rem
+	transition: all 0.3s
 	&-brands
 		&-whatsapp
-			transition: all 0.5
 			&:hover
 				color: #4cd137
 		&-vk
-			transition: all 0.5
 			&:hover
 				color: #0652dd
+				text-shadow: 0 0 1.5rem #0652dd
 		&-instagram
-			transition: all 0.5
 			&:hover
 				color: #D980FA
 
@@ -63,25 +61,25 @@ hr
 	justify-content: space-between
 	height: 100%
 	&-link
+		color: $txt
 		font-size: 1.8rem
 		text-transform: uppercase
 		font-weight: 500
-		transition: all 0.4s
+		transition: all 0.3s
 		&:hover
 			color: $color-btn
 			text-shadow: 0 0 1.5rem $color-btn
 		&__whatsapp
-			transition: all 0.5
 			&:hover
 				text-shadow: 0 0 1.5rem #4cd137
 		&__vk
-			transition: all 0.5
 			&:hover
-				text-shadow: 0 0 1.5rem #0652dd
+
 		&__instagram
-			transition: all 0.5
 			&:hover
 				text-shadow: 0 0 1.5rem #d980fa
+		&_active
+			color: $color-btn
 
 	&__btn
 		border: 2px solid #000

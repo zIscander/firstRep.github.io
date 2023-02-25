@@ -15,7 +15,6 @@ body {
 }
 
 a, a:focus, a:visited, a:hover {
-  color: #000;
   text-decoration: none;
 }
 
@@ -27,24 +26,15 @@ hr {
 
 .fi {
   font-size: 2.5rem;
-}
-.fi-brands-whatsapp {
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .fi-brands-whatsapp:hover {
   color: #4cd137;
 }
-.fi-brands-vk {
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
-}
 .fi-brands-vk:hover {
   color: #0652dd;
-}
-.fi-brands-instagram {
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
+  text-shadow: 0 0 1.5rem #0652dd;
 }
 .fi-brands-instagram:hover {
   color: #D980FA;
@@ -76,36 +66,25 @@ hr {
   height: 100%;
 }
 .social-link {
+  color: #000;
   font-size: 1.8rem;
   text-transform: uppercase;
   font-weight: 500;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .social-link:hover {
   color: #6633ff;
   text-shadow: 0 0 1.5rem #6633ff;
 }
-.social-link__whatsapp {
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
-}
 .social-link__whatsapp:hover {
   text-shadow: 0 0 1.5rem #4cd137;
 }
-.social-link__vk {
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
-}
-.social-link__vk:hover {
-  text-shadow: 0 0 1.5rem #0652dd;
-}
-.social-link__instagram {
-  -webkit-transition: all 0.5;
-  transition: all 0.5;
-}
 .social-link__instagram:hover {
   text-shadow: 0 0 1.5rem #d980fa;
+}
+.social-link_active {
+  color: #6633ff;
 }
 .social__btn {
   border: 2px solid #000;
