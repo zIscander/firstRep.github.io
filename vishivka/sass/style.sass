@@ -1,11 +1,11 @@
 // Шрифты
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
+// @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
 
 
 // Цвета
 $txt: #000
-$milk: #ffffe0 
-$color-btn: #fff200
+$milk: #ffffed 
+$color-btn: #6633ff
 
 
 
@@ -20,34 +20,67 @@ html
 	font-size: 10px
 
 body
-	font-family: 'Lobster', cursive
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%)
+	// font-family: 'Lobster', cursive
+	background-color: $milk
+
+section
+	margin: 5rem
 
 .title
+	font-size: 4rem
+	padding: 2rem
+	&__link
+		display: inline-block
+		margin: 0 2rem 2rem 2rem
+		font-size: 1.2rem
+		color: $txt
+		&-defis
+			font-size: 1.8rem
+
+.sub-title
+	font-size: 1.6rem
+	text-align: justify
+	white-space: pre-wrap
+
+.title__right-block
 	text-align: center
 	font-size: 3rem
-	transition: all 0.5s
+
 
 a, a:focus, a:visited, a:hover
-	color: $txt
 	text-decoration: none
+
+ul
+	list-style: none
 
 hr 
 	width: 93%
 	color: $txt
 	margin: 0 auto
 
-.container_milk
-	// background-color: rgba($txt, 0.2)
-	background-image: linear-gradient(135deg, #667eea 0%, #764ba2 80%)
-	margin: 3rem auto
-	border-radius: 4rem
-	box-shadow:  300px 100px 20px rgba(0, 0, 0, .3)
+.fi
+	font-size: 2.5rem
+	transition: all 0.3s
+	&-brands
+		&-whatsapp
+			&:hover
+				color: #4cd137
+		&-vk
+			&:hover
+				color: #0652dd
+				text-shadow: 0 0 1.5rem #0652dd
+		&-instagram
+			&:hover
+				color: #D980FA
 
+.right-img
+	width: 100%
+	max-height: 25rem
+	object-fit: cover
+	border-radius: 3rem
 
 // Header
 .header 
-	height: 6rem
 	display: flex
 	align-items: center
 
@@ -55,29 +88,49 @@ hr
 	&-img 
 		width: 8rem
 
-.menu
+.social
 	display: flex
 	align-items: center
-	justify-content: space-around
+	justify-content: space-between
 	height: 100%
-	text-align: center
 	&-link
+		color: $txt
 		font-size: 1.8rem
-		transition: all 0.4s
+		text-transform: uppercase
+		font-weight: 500
+		transition: all 0.3s
 		&:hover
 			color: $color-btn
 			text-shadow: 0 0 1.5rem $color-btn
+		&__whatsapp
+			&:hover
+				text-shadow: 0 0 1.5rem #4cd137
+		&__vk
+			&:hover
+
+		&__instagram
+			&:hover
+				text-shadow: 0 0 1.5rem #d980fa
+		&_active
+			color: $color-btn
+
 	&__btn
 		border: 2px solid #000
-		padding: 0.5rem 2rem
+		padding: 0.1rem 2rem
 		border-radius: 3rem
 		transition: all 0.4s
 		&:hover
 			box-shadow: inset 0 0 1.5rem $color-btn,  0 0 1.5rem $color-btn
-			color: $color-btn
+			color: $milk
+			background-color: $color-btn
 			text-shadow: 0 0 1.5rem $color-btn
 			border: 2px solid $color-btn
-
+.nav-list
+	display: flex
+	justify-content: space-around
+	text-align: center
+	margin-top: 1rem
+	&-item
 
 // Главная
 .main
@@ -97,41 +150,20 @@ hr
 			width: 60rem
 	
 
-//  О нас
-.about
-	&:hover .title
-		color: $milk
-	&-block
-		// background-color: rgba($txt, 0.2)
-		background-image: linear-gradient(135deg, #667eea 0%, #764ba2 80%)
-		margin: 3rem auto
-		padding: 1rem
-		border-radius: 4rem
-		box-shadow:  300px 100px 20px rgba(0, 0, 0, .3)
-		transition: all 0.5s
-		&:hover
-			transform: scale(1.04)
-			& .about-block__subtitle
-				color: $milk
-		&__img
-			width: 24rem
-			border-radius: 4rem
-		&__title
-			color: $milk
-			font-size: 3rem
-			text-align: right
-		&__subtitle
-			padding: 0.8rem
-			color: $txt
+
+
+
+// Услуги
+.services
+	&-list
+		border: 2px solid $color-btn
+		border-radius: 3rem
+		position: fixed
+		&-item
+			margin: 3rem
+			margin-left: -1rem
+		&__link
 			font-size: 2rem
-			letter-spacing: 1px
-			transition: all 0.5s
 
 
-
-
-
-
-
-// Портфолио
 
