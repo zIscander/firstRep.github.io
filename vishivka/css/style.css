@@ -14,8 +14,41 @@ body {
   background-color: #ffffed;
 }
 
+section {
+  margin: 5rem;
+}
+
+.title {
+  font-size: 4rem;
+  padding: 2rem;
+}
+.title__link {
+  display: inline-block;
+  margin: 0 2rem 2rem 2rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+.title__link-defis {
+  font-size: 1.8rem;
+}
+
+.sub-title {
+  font-size: 1.6rem;
+  text-align: justify;
+  white-space: pre-wrap;
+}
+
+.title__right-block {
+  text-align: center;
+  font-size: 3rem;
+}
+
 a, a:focus, a:visited, a:hover {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 hr {
@@ -38,6 +71,14 @@ hr {
 }
 .fi-brands-instagram:hover {
   color: #D980FA;
+}
+
+.right-img {
+  width: 100%;
+  max-height: 25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 3rem;
 }
 
 .header {
@@ -110,7 +151,6 @@ hr {
       justify-content: space-around;
   text-align: center;
   margin-top: 1rem;
-  list-style: none;
 }
 
 .main {
@@ -138,4 +178,17 @@ hr {
 }
 .main-logo-img {
   width: 60rem;
+}
+
+.services-list {
+  border: 2px solid #6633ff;
+  border-radius: 3rem;
+  position: fixed;
+}
+.services-list-item {
+  margin: 3rem;
+  margin-left: -1rem;
+}
+.services-list__link {
+  font-size: 2rem;
 }
