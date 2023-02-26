@@ -14,6 +14,10 @@ body {
   background-color: #ffffed;
 }
 
+.no-scroll {
+  overflow-y: hidden;
+}
+
 section {
   margin: 5rem;
 }
@@ -107,7 +111,7 @@ hr {
 }
 .social-link {
   color: #000;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 500;
   -webkit-transition: all 0.3s;
@@ -171,7 +175,7 @@ hr {
   font-size: 4rem;
 }
 .main-logo-img {
-  width: 60rem;
+  width: 50rem;
 }
 
 .services-list {
@@ -214,6 +218,7 @@ hr {
   color: #8761ff;
 }
 .footer__txt {
+  margin: auto;
   color: #000;
   font-size: 1.2rem;
 }
@@ -246,7 +251,6 @@ hr {
   width: 100%;
   z-index: 9;
   background-color: rgba(0, 0, 0, 0.6);
-  overflow: hidden;
 }
 .popup-dialog {
   width: 35rem;
@@ -312,6 +316,7 @@ hr {
 .popup-form-input {
   width: 24rem;
   margin-bottom: 2rem;
+  padding-top: 1rem;
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #000;

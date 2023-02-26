@@ -1,4 +1,4 @@
-// Шрифты
+Шрифты
 // @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
 
 
@@ -22,6 +22,8 @@ html
 body
 	// font-family: 'Lobster', cursive
 	background-color: $milk
+.no-scroll
+	overflow-y: hidden
 
 section
 	margin: 5rem
@@ -94,7 +96,7 @@ hr
 	height: 100%
 	&-link
 		color: $txt
-		font-size: 1.8rem
+		font-size: 1.6rem
 		text-transform: uppercase
 		font-weight: 500
 		transition: all 0.3s
@@ -138,7 +140,7 @@ hr
 	font-size: 2.6rem
 	&-logo
 		&-img
-			width: 60rem
+			width: 50rem
 	
 
 
@@ -177,7 +179,7 @@ hr
 
 
 
-
+// Футер
 .footer 
 	padding: 1rem
 	position: relative
@@ -187,6 +189,7 @@ hr
 		&:hover
 			color: $color-btn
 	&__txt
+		margin: auto
 		color: $txt
 		font-size: 1.2rem
 	&-block
@@ -219,7 +222,6 @@ hr
 	width: 100%
 	z-index: 9
 	background-color: rgba(0, 0, 0, 0.6)
-	overflow: hidden
 	&-dialog
 		width: 	35rem
 		height: 43rem
@@ -260,6 +262,7 @@ hr
 		&-input
 			width: 24rem
 			margin-bottom: 2rem
+			padding-top: 1rem
 			border: none
 			background-color: transparent
 			border-bottom: 1px solid #000
@@ -276,9 +279,6 @@ hr
 			font-size: 2rem
 			margin-left: -2rem
 			color: #444
-
-
-
 
 
 

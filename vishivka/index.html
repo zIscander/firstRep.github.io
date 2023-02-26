@@ -96,6 +96,8 @@
 		</div>
 	</section>
 
+
+<!-- Футер -->
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
@@ -162,11 +164,13 @@
 			event.preventDefault();
 			$('.popup').fadeIn('slow/900/fast', function() {
 			});
+			$('body').toggleClass('no-scroll');
 		});
 		$('.popup-close').on('click', function(event) {
 			event.preventDefault();
 			$('.popup').fadeOut('slow/400/fast', function() {
 			});
+			$('body').toggleClass('no-scroll');
 		});
 	});
 
