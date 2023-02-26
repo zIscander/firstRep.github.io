@@ -211,6 +211,7 @@ hr {
 }
 .footer__link {
   color: #000;
+  vertical-align: start;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
