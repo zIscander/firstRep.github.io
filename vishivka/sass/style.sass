@@ -1,5 +1,5 @@
 Шрифты
-// @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sofia+Sans:wght@200;400;600;800&display=swap')
 
 
 // Цвета
@@ -20,7 +20,6 @@ html
 	font-size: 10px
 
 body
-	// font-family: 'Lobster', cursive
 	background-color: $milk
 .no-scroll
 	overflow-y: hidden
@@ -40,7 +39,8 @@ section
 			font-size: 1.8rem
 
 .sub-title
-	font-size: 1.6rem
+	font-size: 1.7rem
+	line-height: 1.8
 	text-align: justify
 	white-space: pre-wrap
 
@@ -55,10 +55,12 @@ a, a:focus, a:visited, a:hover
 ul
 	list-style: none
 
-hr 
-	width: 93%
+hr
+	width: 100%
 	color: $txt
 	margin: 0 auto
+#hr__down
+		width: 83%
 
 .fi
 	font-size: 2.5rem
@@ -95,6 +97,7 @@ hr
 	justify-content: space-between
 	height: 100%
 	&-link
+		position: relative
 		color: $txt
 		font-size: 1.6rem
 		text-transform: uppercase
@@ -103,8 +106,20 @@ hr
 		&:hover
 			color: $color-btn
 			text-shadow: 0 0 1.5rem $color-btn
+
 		&_active
 			color: $color-btn
+			&::after
+				content: ''
+				width: 100%
+				height: 0.2rem
+				background-color: $color-btn
+				position: absolute
+				bottom: -1.4rem
+				right: 50%
+				transform: translateX(50%)
+				box-shadow: 0 -3px 7px $color-btn
+
 		&_footer
 			margin-left: 3rem
 			vertical-align: middle
@@ -128,6 +143,7 @@ hr
 // Главная
 .main
 	&-wrapper
+		font-family: 'Lobster', cursive
 		display: flex
 		flex-direction: column
 		align-items: center
@@ -142,9 +158,20 @@ hr
 		&-img
 			width: 50rem
 	
+// О нас
+.about
+	&-title
+		text-align: center
+	&__list
+		width: 70%
+		margin-left: 3rem
 
+	&__title
+		font-size: 3rem
 
-
+	&__item
+		font-size: 1.8rem
+		margin: 1rem auto
 
 // Услуги
 .services
@@ -185,7 +212,6 @@ hr
 	position: relative
 	&__link
 		color: $txt
-		vertical-align: start
 		transition: all 0.3s
 		&:hover
 			color: $color-btn
