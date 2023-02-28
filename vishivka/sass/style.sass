@@ -57,7 +57,7 @@ ul
 
 hr
 	width: 100%
-	color: $txt
+	color: rgba(0, 0, 0, 0.6)
 	margin: 0 auto
 #hr__down
 		width: 83%
@@ -119,10 +119,6 @@ hr
 				right: 50%
 				transform: translateX(50%)
 				box-shadow: 0 -3px 7px $color-btn
-
-		&_footer
-			margin-left: 3rem
-			vertical-align: middle
 
 	&__btn
 		border: 2px solid #000
@@ -210,6 +206,9 @@ hr
 .footer 
 	padding: 1rem
 	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
 	&__link
 		color: $txt
 		transition: all 0.3s
@@ -219,21 +218,23 @@ hr
 		margin: auto
 		color: $txt
 		font-size: 1.2rem
-	&-block
 		text-align: center
+	&-block
+		display: flex
+		justify-content: space-evenly
 		&::before, &::after
 			content: ''
 			height: 0.1rem
-			width: 40rem
+			width: 40%
 			position: absolute
 			top: 25%
-			background-color: #000
+			background-color: rgba(0, 0, 0, 0.3)
 		&::before
-			right: 50%
-			margin-right: 20rem
+			right: 38%
+			transform: translateX(-50%)
 		&::after
-			left: 50%
-			margin-left: 20rem
+			left: 38%
+			transform: translateX(50%)
 
 
 

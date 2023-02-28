@@ -59,7 +59,7 @@ ul {
 
 hr {
   width: 100%;
-  color: #000;
+  color: rgba(0, 0, 0, 0.6);
   margin: 0 auto;
 }
 
@@ -143,10 +143,6 @@ hr {
           transform: translateX(50%);
   -webkit-box-shadow: 0 -3px 7px #8761ff;
           box-shadow: 0 -3px 7px #8761ff;
-}
-.social-link_footer {
-  margin-left: 3rem;
-  vertical-align: middle;
 }
 .social__btn {
   border: 2px solid #000;
@@ -244,6 +240,15 @@ hr {
 .footer {
   padding: 1rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .footer__link {
   color: #000;
@@ -257,25 +262,33 @@ hr {
   margin: auto;
   color: #000;
   font-size: 1.2rem;
+  text-align: center;
 }
 .footer-block {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .footer-block::before, .footer-block::after {
   content: "";
   height: 0.1rem;
-  width: 40rem;
+  width: 40%;
   position: absolute;
   top: 25%;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .footer-block::before {
-  right: 50%;
-  margin-right: 20rem;
+  right: 38%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 .footer-block::after {
-  left: 50%;
-  margin-left: 20rem;
+  left: 38%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 .popup {
