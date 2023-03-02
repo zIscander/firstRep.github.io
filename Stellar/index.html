@@ -339,11 +339,11 @@
 						<h4 class="form-title">Отправьте заявку <br> и Мы свяжемся с Вами!</h4>
 						<form action="telegram.php" method="POST">
 							<label for="name">Ваше имя<sup>*</sup></label>
-							<input id="name" type="text" name="user_name" placeholder="Александр" required pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы">
+							<input id="name" type="text" name="user_name" placeholder="Александр" required pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы" autocomplete="off">
 							<label for="phone">Ваш номер<sup>*</sup></label>
-							<input id="phone" type="number" name="user_phone" placeholder="8 999 999 99 99" required>
+							<input id="phone" type="number" name="user_phone" placeholder="8 999 999 99 99" required autocomplete="off">
 							<label for="email">Ваш e-mail</label>
-							<input id="email" type="email" name="user_email" placeholder="sales@stellar-pro.org">
+							<input id="email" type="email" name="user_email" placeholder="sales@stellar-pro.org" autocomplete="off">
 							<button class="all-btn" type="submit">Отправить</button>
 						</form>
 					</div>
