@@ -53,13 +53,13 @@
 		 						<a class="social-link" href="about.html">О нас</a>
 		 					</li>
 		 					<li class="nav-list-item">
-		 						<a href="services.html" class="social-link">Услуги</a>
+		 						<a class="social-link" href="services.html">Услуги</a>
 		 					</li>
 		 					<li class="nav-list-item">
-		 						<a href="portfolio.html" class="social-link">Наши работы</a>
+		 						<a class="social-link" href="portfolio.html">Наши работы</a>
 		 					</li>
 		 					<li class="nav-list-item">
-		 						<a href="info.html" class="social-link">Информация</a>
+		 						<a class="social-link" href="info.html">Информация</a>
 		 					</li>
 		 					<li class="nav-list-item">
 		 						<a class="social-link social-link_active" href="contacts.html">Контакты</a>
@@ -75,7 +75,7 @@
 <!--  секция Контакты -->
 
 	<section class="contacts">
-		<!-- <div class="container"> -->
+		<div class="container">
 
 			<div class="section-header">
 				<h2 class="title">Контакты</h2>
@@ -83,22 +83,52 @@
 
 			<div class="row">
 				
-				<div class="col-5 offset-1">
-					<adress class="adress">
-						<h4 class="contacts__title">Адрес:</h4>
-						<p class="contacts__sub-title">г. Екатеринбург, пер. Автоматики 4Б, офис 231</p>
-					</adress>
-					<p class="contacts__title">Телефон: <a href="" class="contacts__sub-title social-link">8 (912) 683 30 62</a></p>
-				</div>
-
 				<div class="col-6">
-					<div class="map"></div>
+					<div class="row">
+						
+						<div class="col-6">
+							<adress class="adress">
+								<h4 class="contacts__title">Адрес:</h4>
+								<p class="contacts__sub-title">г. Екатеринбург, пер. Автоматики 4Б, офис 235</p>
+							</adress>
+							<p class="contacts__title">Телефон: <a href="" class="contacts__sub-title social-link">8 (912) 683 30 62</a></p>
+						</div>
+
+						<div class="col-5 offset-1">
+							<h4 class="contacts__title">Режим работы:</h4>
+							<p class="contacts__sub-title">Пн-Пт: 10:00 - 19:00</p>
+							<p class="contacts__title">E-mail: <a href="mailto:" class="contacts__sub-title social-link">ziscander@yandex.ru</a></p>
+						</div>
+
+
+					</div>
+					<div class="row">
+						<div class="col-6">
+							<div class="contacts-block">
+							
+								<a class="social-link_contacts social-link__whatsapp" href="https://wa.me/79126833062?text=Здравствуйте%2C+я+хочу+заказать+вышивку" target="_blank"><i class="fi fi-brands-whatsapp"></i></a>
+							
+								<a class="social-link_contacts social-link__vk" href="https://vk.com/vishivka__196" target="_blank"><i class="fi fi-brands-vk"></i></a>
+							
+								<a class="social-link_contacts social-link__instagram" href="https://instagram.com/vishivka_196?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+
+							</div>
+						</div>
+						<div class="col-5 offset-1">
+							<a href="#" class="social-link social__btn contacts__btn popup-btn">заказать звонок</a></div>
+					</div>
 				</div>
 
 			</div>
 
-		<!-- </div> -->
+
+
+
+		</div>
 	</section>
+	<div class="map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A398ecbef97e1c87cea2cc213fddc72d1f6375ce52c4523167bc199c7acab7ba3&amp;source=constructor"></iframe>
+	</div>
 
 
 	<!-- Модальное окно -->
@@ -111,12 +141,12 @@
 						<form action="#" class="popup-form">
 
 							<div class="input-box">
-								<input type="text" id="name" class="popup-form-input" required><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
+								<input type="text" id="name" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
 								<label for="name" class="popup-form-label">Ваше имя</label>
 							</div>
 
 							<div class="input-box">
-								<input type="number" id="phone" class="popup-form-input" required><i class="fi popup-form__fi fi-sr-call-incoming"></i>
+								<input type="number" id="phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
 								<label for="phone" class="popup-form-label">Ваш телефон</label>
 							</div>
 
