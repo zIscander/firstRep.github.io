@@ -28,22 +28,25 @@ section
 	margin: 5rem
 
 .title
+	margin-bottom: 2rem
 	font-size: 4rem
-	padding: 2rem
-	margin: 4rem
 	&__link
 		display: inline-block
 		margin: 0 2rem 2rem 2rem
 		font-size: 1.2rem
 		color: $txt
-		&-defis
-			font-size: 1.8rem
 
 .sub-title
-	font-size: 1.7rem
+	font-size: 3rem
 	line-height: 1.8
 	text-align: justify
 	white-space: pre-wrap
+
+.txt
+	margin: 1rem 0 4rem 1rem
+	line-height: 2.8rem
+	font-size: 1.6rem
+	color: $txt-gray
 
 .title__right-block
 	text-align: center
@@ -191,12 +194,7 @@ hr
 .contacts
 	&__title
 		font-size: 2rem
-		margin-bottom: 2rem
-
-	&__sub-title
-		font-size: 1.6rem
-		margin: 1rem 0 4rem 1rem
-		color: $txt-gray
+		margin: 3rem auto 2rem
 
 	&-block
 		display: flex
@@ -225,6 +223,35 @@ hr
 		width: 100%
 		height: 100%
 
+
+// Секция инфо
+.info
+	&__list-item
+		margin: 1rem auto
+	// accardion
+	&__accordion
+		width: 90%
+		&-item_bg
+			border: 1px solid #000
+			background-color: $milk
+		&-header
+			padding-left: 3rem
+			font-size: 2rem
+			background: $milk
+			border: 2px double $txt-gray
+		&-body
+			margin: 0
+			background-color: $milk
+
+
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed
+		border-radius: 5rem
+		background-color: rgba($color-btn, 0.1)
+		color: $txt
+		outline: none
+		.accordion-button, .accordion-button:focus, button:focus:not(:focus-visible)
+			outline: none
+			border: none
 
 
 
