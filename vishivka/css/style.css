@@ -211,6 +211,22 @@ hr {
   width: 50rem;
 }
 
+.slick-slider__img {
+  height: 50rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-box-shadow: -6px 6px 15px #8761ff;
+          box-shadow: -6px 6px 15px #8761ff;
+  border-bottom-left-radius: 5rem;
+  border-top-left-radius: 5rem;
+}
+
 .about {
   position: relative;
 }

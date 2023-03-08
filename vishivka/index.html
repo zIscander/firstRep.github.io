@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/uicons-brands.css">
 	<link rel="stylesheet" href="css/uicons-solid-rounded.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -75,7 +76,7 @@
 <!-- Первая секция Главная -->
 
 	<section class="main">
-		<div class="container">
+		<!-- <div class="container"> -->
 
 			<div class="row">
 
@@ -87,14 +88,45 @@
 				</div>
 
 				<div class="col-7">
-					<div class="main-logo">
+
+					<div class="slick-slider">
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/01.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/02.jpg" alt="наши работы" class="slick-slider__img">
+					  </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/03.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/04.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/05.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/06.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/07.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/08.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					    <div class="slick-slider__item">
+					    	<img src="img/slider-main/09.jpg" alt="наши работы" class="slick-slider__img">
+					    </div>
+					  </div>
+
+					<!-- <div class="main-logo">
 						<img class="main-logo__img" src="img/logo.png" alt="логотип">
-					</div>
+					</div> -->
 				</div>
 				
 			</div>
 
-		</div>
+		<!-- </div> -->
 	</section>
 
 <!-- Футер -->
@@ -160,11 +192,12 @@
 
 <script src="js/jquery-3.6.3.min.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/slick.min.js"></script>
 
 <!-- инициализация модального окна -->
 	<script>
 		$(document).ready(function(){
-					// модальное окно ОСТАВИТЬ ЗАЯВКУ
+			// модальное окно ОСТАВИТЬ ЗАЯВКУ
 			$('.popup-btn').on('click', function(event) {
 				event.preventDefault();
 				$('.popup').fadeIn('slow/900/fast', function() {
@@ -177,6 +210,19 @@
 				});
 				$('body').toggleClass('no-scroll');
 			});
+
+			// Слайдер слик
+				$('.slick-slider').slick({
+				  dots: false,
+				  infinite: true,
+				  speed: 500,
+				  fade: true,
+				  cssEase: 'linear',
+				  autoplay: true,
+			    autoplaySpeed: 2500,
+			    arrows: false
+			 });
+
 		});
 	</script>
 </body>
