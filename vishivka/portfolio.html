@@ -6,33 +6,34 @@
 	<title>Вышивка</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/uicons-brands.css">
+	<link rel="stylesheet" href="css/uicons-solid-rounded.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- Header -->
-
 	<header class="header">
 		<div class="container">
 		 	<div class="row">
-			 	<nav class="nav header__nav">
+			 	<nav class="nav">
 	 		
 		 			<div class="col-2">
 		 				<div class="logo">
-		 					<img class="logo-img" src="img/logo-txt.svg" alt="Логотип">
+		 					<img class="logo__img" src="img/logo-txt.svg" alt="Логотип">
 		 				</div>
 		 			</div>
 
 		 			<div class="col-3 offset-7">
 		 				<div class="social">
 
-		 					<a class="social-link social-link__whatsapp" href="wa.me/79126833062?text=Здравствуйте%2C+я+хочу+заказать+вышивку" target="_blank"><i class="fi fi-brands-whatsapp"></i></a>
+		 					<a class="social__link_whatsapp" href="https://wa.me/79126833062?text=Здравствуйте%2C+я+хочу+заказать+вышивку" target="_blank"><i class="fi fi-brands-whatsapp"></i></a>
 
-		 					<a class="social-link social-link__vk" href="vk.com/vishivka__196" target="_blank"><i class="fi fi-brands-vk"></i></a>
+		 					<a class="social__link_vk" href="https://vk.com/vishivka__196" target="_blank"><i class="fi fi-brands-vk"></i></a>
 
-		 					<a class="social-link social-link__instagram" href="instagram.com/vishivka_196?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fi fi-brands-instagram"></i></a>
+		 					<a class="social__link_instagram" href="https://instagram.com/vishivka_196?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fi fi-brands-instagram"></i></a>
 
-		 					<a href="#" class="social-link social__btn">Заказать</a>
+		 					<a href="#" class="main-link main-btn social__btn popup-btn">Заказать</a>
 
 		 				</div>
 		 			</div>
@@ -46,32 +47,179 @@
 	 			<div class="col-10 offset-1">
 	 				<ul class="nav-list">
 	 					<li class="nav-list-item">
- 							<a class="social-link" href="index.html">Главная</a>
+ 							<a class="main-link" href="index.html">Главная</a>
  						</li>
  						<li class="nav-list-item">
-	 						<a class="social-link" href="about.html">О нас</a>
+	 						<a class="main-link" href="about.html">О нас</a>
 	 					</li>
 	 					<li class="nav-list-item">
-	 						<a href="services.html" class="social-link">Услуги</a>
+	 						<a class="main-link" href="services.html">Услуги</a>
 	 					</li>
 	 					<li class="nav-list-item">
-	 						<a href="portfolio.html" class="social-link social-link_active">Наши работы</a>
+	 						<a class="main-link  main-link_active" href="portfolio.html">Наши работы</a>
 	 					</li>
 	 					<li class="nav-list-item">
-	 						<a href="info.html" class="social-link">Информация</a>
+	 						<a class="main-link" href="info.html">Информация</a>
 	 					</li>
 	 					<li class="nav-list-item">
-	 						<a href="contacts.html" class="social-link">Контакты</a>
+	 						<a class="main-link" href="contacts.html">Контакты</a>
 	 					</li>
 	 				</ul>
 	 			</div>	
 	 		</div>
+	 		<hr id="hr__down">
 
 		</div>
 	</header>
 
 
+<!-- Портфолио -->
+	<section class="portfolio">
+		<div class="container">
+			<div class="section-header">
+				<h2 class="title text-start">Наши работы</h2>
+			</div>
 
+			<aside class="side-bar">
+				<ul class="side-bar-list">
+					<li class="side-bar-list__item">
+						<a href="portfolio.html" class="main-link main-link_active side-bar__link">Вышивка</a>
+					</li>
+					<li class="side-bar-list__item">
+						<a href="portfolio/flex-flok.html" class="main-link side-bar__link">Печать флексом, флоком</a>
+					</li>
+					<li class="side-bar-list__item">
+						<a href="portfolio/sublimacion.html" class="main-link side-bar__link">Сублимационная печать</a>
+					</li>
+					<li class="side-bar-list__item">
+						<a href="portfolio/shevron.html" class="main-link side-bar__link">Шеврон</a>
+					</li>
+				</ul>
+			</aside>
+
+			<div class="row">
+				<div class="col-8 offset-4">
+					
+					<div class="portfolio-slider">
+					  <div class="portfolio-slider__item">
+					  	<img src="img/slider-port/vishivka/01.jpg" alt="вышивка" class="portfolio-slider__img">
+					  </div>
+					  <div class="portfolio-slider__item">
+					  	<img src="img/slider-port/vishivka/02.jpg" alt="вышивка" class="portfolio-slider__img">
+					  </div>
+					  <div class="portfolio-slider__item">
+					  	<img src="img/slider-port/vishivka/03.jpg" alt="вышивка" class="portfolio-slider__img">
+					  </div>
+					</div>
+
+					<div class="portfolio-slider_nav">
+					  <div class="portfolio-slider__item">
+					  	<img src="img/slider-port/vishivka/01.jpg" alt="вышивка" class="portfolio-slider__img-nav">
+					  </div>
+					  <div class="portfolio-slider__item">
+					  	<img src="img/slider-port/vishivka/02.jpg" alt="вышивка" class="portfolio-slider__img-nav">
+					  </div>
+					  <div class="portfolio-slider__item">
+					  	<img src="img/slider-port/vishivka/03.jpg" alt="вышивка" class="portfolio-slider__img-nav">
+					  </div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+<hr>
+
+<!-- Футер -->
+	<footer class="footer">
+		<div class="container">
+				
+			<div class="row">
+				<div class="col-12">
+					<p class="footer__txt">Vishivka_196 2023 &copy; Все права защищены. Копирование любых графических и текстовых материалов запрещено. Продолжая просмотр сайта, вы соглашаетесь на обработку персональных данных передаваемых через форму.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-3 offset-9">
+					<p class="footer__txt">Разработка сайта: <a href="https://vk.com/ziscander" class="footer__link">Александр Шмик</a></p>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+
+<!-- Модальное окно -->
+	<div class="popup">
+			<div class="popup-dialog">
+				<div class="popup-content">
+					<button class="popup-close">&times;</button>
+					<h3 class="popup-header">Оставьте заявку <br> и мы свяжемся с Вами</h3>
+					<div class="popup-form-block">
+						<form action="#" class="popup-form">
+
+							<div class="input-box">
+								<input type="text" id="name" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
+								<label for="name" class="popup-form-label">Ваше имя</label>
+							</div>
+
+							<div class="input-box">
+								<input type="number" id="phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
+								<label for="phone" class="popup-form-label">Ваш телефон</label>
+							</div>
+
+							<button class="popup-form-btn main-btn social_btn">Отправить</button>
+
+						</form>
+					</div>
+				</div>
+			</div>
+	</div>
+
+<!-- Подключение  js -->
+	<script src="js/jquery-3.6.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/slick.min.js"></script>
+
+<!-- инициализация модального окна, слайдера -->
+	<script>
+			$(document).ready(function(){
+				// модальное окно ОСТАВИТЬ ЗАЯВКУ
+				$('.popup-btn').on('click', function(event) {
+					event.preventDefault();
+					$('.popup').fadeIn('slow/900/fast', function() {
+					});
+					$('body').toggleClass('no-scroll');
+				});
+				$('.popup-close').on('click', function(event) {
+					event.preventDefault();
+					$('.popup').fadeOut('slow/400/fast', function() {
+					});
+					$('body').toggleClass('no-scroll');
+				});
+
+				// Слайдер слик
+					$('.portfolio-slider').slick({
+					  slidesToShow: 1,
+					  slidesToScroll: 1,
+					  arrows: false,
+					  fade: true,
+					  asNavFor: '.portfolio-slider_nav'
+					});
+					$('.portfolio-slider_nav').slick({
+					  slidesToShow: 3,
+					  slidesToScroll: 1,
+					  asNavFor: '.portfolio-slider',
+					  dots: false,
+					  centerMode: true,
+					  focusOnSelect: true,
+					  arrows: true,
+					});
+			});
+	</script>
 
 </body>
 </html>
