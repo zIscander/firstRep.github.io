@@ -57,6 +57,7 @@ a, a:focus, a:visited, a:hover {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 hr {
@@ -131,14 +132,14 @@ hr {
 .side-bar {
   position: fixed;
   margin-top: 5rem;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 0;
   border-top: 1px solid rgba(135, 97, 255, 0.3);
   border-right: 1px solid rgba(135, 97, 255, 0.3);
   border-top-right-radius: 5rem;
+  z-index: 1;
 }
 .side-bar-list__item {
-  margin: 2rem auto;
-  margin-left: -1rem;
+  margin: 2rem 0;
 }
 .side-bar__link {
   font-size: 1.6rem;
@@ -282,6 +283,9 @@ hr {
      object-fit: cover;
 }
 
+.portfolio-slider {
+  margin-bottom: 4rem;
+}
 .portfolio-slider__img {
   height: 50rem;
   width: 100%;
@@ -289,20 +293,66 @@ hr {
      object-fit: cover;
 }
 .portfolio-slider__img-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
+  margin: 0.5rem auto 0;
+  height: 11rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 5rem;
+  border-radius: 3rem;
 }
 .portfolio-slider_nav {
+  margin: 2rem auto 0;
+  width: 70%;
+}
+.portfolio-slider_nav .slick-track, .portfolio-slider_nav .slick-list {
   height: 12rem;
-  margin-top: 2rem;
 }
 .portfolio .slick-slider .slick-track, .portfolio .slick-slider .slick-list {
   border-radius: 5rem;
+}
+.portfolio .slick-slider .slick-track {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.portfolio .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 3.5rem;
+  height: 3.5rem;
+  bottom: -12rem;
+  color: #8761ff;
+  font-size: 2.2rem;
+  border: 1px solid #8761ff;
+  border-radius: 10rem;
+  -webkit-box-shadow: -6px 6px 15px #8761ff;
+          box-shadow: -6px 6px 15px #8761ff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.portfolio .arrow:hover {
+  background-color: #8761ff;
+  color: #ffffed;
+}
+.portfolio .next {
+  left: 6rem;
+}
+.portfolio .prev {
+  right: 6rem;
+}
+.portfolio .side-bar {
+  margin-top: 0;
+}
+.portfolio .side-bar-list__item {
+  margin: 1.2rem 0;
 }
 
 .info {

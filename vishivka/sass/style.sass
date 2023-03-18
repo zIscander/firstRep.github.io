@@ -55,6 +55,7 @@ a, a:focus, a:visited, a:hover
 
 ul
 	list-style: none
+	padding: 0
 
 hr
 	width: 100%
@@ -112,14 +113,14 @@ hr
 .side-bar
 	position: fixed
 	margin-top: 5rem
-	padding: 1rem
+	padding: 1rem 2rem 1rem 0
 	border-top: 1px solid rgba($color-btn, 0.3)
 	border-right: 1px solid rgba($color-btn, 0.3)
 	border-top-right-radius: 5rem
+	z-index: 1
 	&-list
 		&__item
-			margin: 2rem auto
-			margin-left: -1rem
+			margin: 2rem 0
 	&__link
 		font-size: 1.6rem
 	.main-link
@@ -224,20 +225,55 @@ hr
 // Портфолио
 .portfolio
 	&-slider
+		margin-bottom: 4rem
 		&__img
 			height: 50rem
 			width: 100%
 			object-fit: cover
 			&-nav
-				display: flex
-				width: 100%
+				margin: 0.5rem auto 0
+				height: 11rem
 				object-fit: cover
-				border-radius: 5rem
+				border-radius: 3rem
 		&_nav
-			height: 12rem
-			margin-top: 2rem
+			margin: 2rem auto 0
+			width: 70%
+			.slick-track, .slick-list
+				height: 12rem
+
 	.slick-slider .slick-track, .slick-slider .slick-list
 		border-radius: 5rem
+	.slick-slider .slick-track
+		box-shadow: none
+	.arrow
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		background-color: transparent
+		border: none
+		width: 3.5rem
+		height: 3.5rem
+		bottom: -12rem
+		color: $color-btn
+		font-size: 2.2rem
+		border: 1px solid $color-btn
+		border-radius: 10rem
+		box-shadow: -6px 6px 15px $color-btn
+		transition: all 0.4s
+		&:hover
+			background-color: $color-btn
+			color: $milk
+	.next
+		left: 6rem
+	.prev
+		right: 6rem
+	.side-bar
+		margin-top: 0
+		&-list
+			&__item
+				margin: 1.2rem 0
+
 
 // Секция инфо
 .info
