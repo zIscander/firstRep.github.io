@@ -434,3 +434,52 @@ hr
 
 
 
+
+
+// Медиа запросы 
+// Экраны LG
+@media (max-width: 1199px)
+	
+// Экраны MD
+@media (max-width: 991px)
+	.main
+		&__header
+			font-size: 3rem
+		&__subtitle
+			font-size: 2rem
+	.main-link
+		font-size: 1.4rem
+// Экраны SM
+@media (max-width: 767px)
+	.main
+		&__header
+			font-size: 2.6rem
+		&__subtitle
+			margin-bottom: 3rem
+			font-size: 1.6rem
+	.main-link
+		font-size: 1.2rem
+	.footer
+		&-block
+			&::before
+				right: 45%
+			&::after
+				left: 45%
+// Экраны XS
+@media (max-width: 575px)
+
+// Экран айфон 12 про
+@media (max-width: 390px)
+	.main-link
+		font-size: 0.8rem
+	.fi
+		font-size: 2rem
+	.footer
+		&-block
+			justify-content: space-between
+			&::before, &::after
+				top: 18.5%
+				
+		&__txt
+			margin-top: 1rem
+
