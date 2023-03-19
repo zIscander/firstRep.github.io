@@ -777,6 +777,9 @@ hr {
     background: none;
   }
 
+  .services__post-block {
+    margin: 0;
+  }
   .services__post-img {
     margin-bottom: 2rem;
     width: 19rem;
