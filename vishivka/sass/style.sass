@@ -159,6 +159,7 @@ hr
 
 // Главная
 .main
+
 	&::after
 		content: ''
 		background: url(../img/logo.png) no-repeat bottom right / cover
@@ -188,6 +189,8 @@ hr
 
 // Слайдер главной
 .main-slider
+	display: flex
+	justify-content: center
 	&__img
 		width: 100%
 		height: 100%
@@ -499,6 +502,9 @@ hr
 			font-size: 2rem
 	.main-link
 		font-size: 1.4rem
+	.slick-slider .slick-track, .slick-slider .slick-list
+		height: 39rem
+		width: 39rem
 	.contacts
 		&__block
 			min-height: 11rem
@@ -540,6 +546,9 @@ hr
 		font-weight: 600
 		&_info
 			font-size: 1.4rem
+	.slick-slider .slick-track, .slick-slider .slick-list
+		height: 35rem
+		width: 35rem
 	.about
 		&::after
 			background: none
@@ -554,6 +563,9 @@ hr
 		font-weight: 700
 		&_info
 			font-size: 1.4rem
+	.slick-slider .slick-track, .slick-slider .slick-list
+		height: 32rem
+		width: 32rem
 	.fi
 		font-size: 2rem
 	.footer
@@ -564,6 +576,7 @@ hr
 				
 		&__txt
 			margin-top: 1rem
+
 
 
 

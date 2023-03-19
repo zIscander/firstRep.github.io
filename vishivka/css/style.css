@@ -246,6 +246,14 @@ hr {
   width: 50rem;
 }
 
+.main-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .main-slider__img {
   width: 100%;
   height: 100%;
@@ -659,6 +667,11 @@ hr {
     font-size: 1.4rem;
   }
 
+  .slick-slider .slick-track, .slick-slider .slick-list {
+    height: 39rem;
+    width: 39rem;
+  }
+
   .contacts__block {
     min-height: 11rem;
   }
@@ -711,6 +724,11 @@ hr {
     font-size: 1.4rem;
   }
 
+  .slick-slider .slick-track, .slick-slider .slick-list {
+    height: 35rem;
+    width: 35rem;
+  }
+
   .about::after {
     background: none;
   }
@@ -726,6 +744,11 @@ hr {
   }
   .main-link_info {
     font-size: 1.4rem;
+  }
+
+  .slick-slider .slick-track, .slick-slider .slick-list {
+    height: 32rem;
+    width: 32rem;
   }
 
   .fi {
