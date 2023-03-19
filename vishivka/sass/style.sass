@@ -127,11 +127,14 @@ hr
 		&::after
 			bottom: -0.5rem
 .video
+	&-block
+		display: flex
+		justify-content: center
 	border-radius: 5rem
-	height: 25rem
-	width: 100%
+	height: 50rem
+	width: 50rem
 	object-fit: cover
-	object-position: bottom
+	box-shadow: -6px 6px 15px $color-btn
 
 // Header
 .header 
@@ -175,11 +178,13 @@ hr
 // Слайдер главной
 .main-slider
 	&__img
-		height: 50rem
 		width: 100%
+		height: 100%
 		object-fit: cover
 		border-radius: 5rem
 .slick-slider .slick-track, .slick-slider .slick-list
+	height: 50rem
+	width: 50rem
 	box-shadow: -6px 6px 15px $color-btn
 	border-radius: 5rem
 	
@@ -214,34 +219,42 @@ hr
 		max-height: 25rem
 		object-fit: cover
 		border-radius: 3rem
+		box-shadow: -6px 6px 15px $color-btn
 	&__post-block
-		margin: 2rem 0 5rem
+		margin: 0 0 5rem
 
 	&__post-img
 		border-radius: 5rem
-		min-width: 100%
-		max-height: 22rem
+		width: 26rem
+		height: 26rem
 		object-fit: cover
+		border: 1px solid $color-btn
+		box-shadow: -6px 6px 15px $color-btn
 
 // Портфолио
 .portfolio
 	&-slider
+		display: flex
+		justify-content: center
 		margin-bottom: 4rem
 		&__img
-			height: 50rem
+			height: 100%
 			width: 100%
 			object-fit: cover
 			&-nav
 				margin: 0.5rem auto 0
-				height: 11rem
+				height: 9rem
+				width: 9rem
 				object-fit: cover
 				border-radius: 3rem
+				border: 1px solid $color-btn
 		&_nav
+			display: flex
+			justify-content: center
 			margin: 2rem auto 0
-			width: 70%
+			width: 65%
 			.slick-track, .slick-list
-				height: 12rem
-
+				height: 10rem
 	.slick-slider .slick-track, .slick-slider .slick-list
 		border-radius: 5rem
 	.slick-slider .slick-track
@@ -255,7 +268,7 @@ hr
 		border: none
 		width: 3.5rem
 		height: 3.5rem
-		bottom: -12rem
+		bottom: -11rem
 		color: $color-btn
 		font-size: 2.2rem
 		border: 1px solid $color-btn
@@ -266,9 +279,9 @@ hr
 			background-color: $color-btn
 			color: $milk
 	.next
-		left: 6rem
+		left: 9rem
 	.prev
-		right: 6rem
+		right: 9rem
 	.side-bar
 		margin-top: 0
 		&-list
