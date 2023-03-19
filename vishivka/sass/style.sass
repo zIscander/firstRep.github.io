@@ -127,14 +127,15 @@ hr
 		&::after
 			bottom: -0.5rem
 .video
-	&-block
-		display: flex
-		justify-content: center
 	border-radius: 5rem
 	height: 50rem
 	width: 50rem
 	object-fit: cover
 	box-shadow: -6px 6px 15px $color-btn
+	&-block
+		display: flex
+		justify-content: center
+	
 
 // Header
 .header 
@@ -227,6 +228,8 @@ hr
 
 // Услуги
 .services
+	.title
+		text-align: left
 	&::after
 		content: ''
 		background: url(../img/logo.png) no-repeat bottom right / cover
@@ -245,6 +248,7 @@ hr
 		box-shadow: -6px 6px 15px $color-btn
 	&__post-block
 		margin: 0 0 5rem
+		text-align: center
 
 	&__post-img
 		border-radius: 5rem
@@ -487,6 +491,10 @@ hr
 // Медиа запросы 
 // Экраны LG
 @media (max-width: 1199px)
+	.services
+		&__post-img
+			width: 20rem
+			height: 20rem
 	.contacts
 		&__block
 			min-height: 9.5rem
@@ -504,9 +512,17 @@ hr
 	.slick-slider .slick-track, .slick-slider .slick-list
 		height: 39rem
 		width: 39rem
+	.services
+		&__post-img
+			width: 13rem
+			height: 13rem
+	.video
+		height: 40rem
+		width: 40rem
 	.contacts
 		&__block
 			min-height: 11rem
+
 // Экраны SM
 @media (max-width: 767px)
 	.main
@@ -519,6 +535,23 @@ hr
 			font-size: 1.6rem
 	.main-link
 		font-size: 1.3rem
+	.about, .portfolio, .services
+		&::after
+			background: none
+	.services
+		.title
+			text-align: center
+		&__post-img
+			width: 14rem
+			height: 14rem
+	.side-bar
+		position: relative
+		margin: 2rem auto
+		padding: 0
+		width: 70%
+		text-align: center
+		border: 1px solid rgba($color-btn, 0.3)
+		border-radius: 5rem
 	.info
 		&::after
 			background: none
@@ -553,12 +586,21 @@ hr
 	.about
 		&::after
 			background: none
+	.services
+		&__post-img
+			margin-bottom: 2rem
+			width: 19rem
+			height: 19rem
 	.contacts
 		.main-link_contacts
 			.fi
 				font-size: 3.2rem
 // Экран айфон 12 про
 @media (max-width: 390px)
+	.services
+	.video
+		width: 30rem
+		height: 30rem
 	.main-link
 		font-size: 0.9rem
 		font-weight: 700
@@ -577,6 +619,8 @@ hr
 				
 		&__txt
 			margin-top: 1rem
+
+
 
 
 
