@@ -306,21 +306,22 @@
 					<button class="popup-close">&times;</button>
 					<h3 class="popup-header">Оставьте заявку <br> и мы свяжемся с Вами</h3>
 					<div class="popup-form-block">
-						<form action="#" class="popup-form">
+						<form action="telegram.php" method="POST" class="popup-form">
 
 							<div class="input-box">
-								<input type="text" id="name" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
+								<input type="text" id="name" name="user_name" class="popup-form-input" pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
 								<label for="name" class="popup-form-label">Ваше имя</label>
 							</div>
 
 							<div class="input-box">
-								<input type="number" id="phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
+								<input type="number" id="phone" name="user_phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
 								<label for="phone" class="popup-form-label">Ваш телефон</label>
 							</div>
 
-							<button class="popup-form-btn main-btn social_btn">Отправить</button>
+							<button class="popup-form-btn main-btn social_btn" type="submit">Отправить</button>
 
 						</form>
+
 					</div>
 				</div>
 			</div>

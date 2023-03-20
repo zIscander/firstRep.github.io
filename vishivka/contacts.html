@@ -128,6 +128,7 @@
 	</section>
 
 	<hr>
+
 <!-- Футер -->
 	<footer class="footer">
 		<div class="container">
@@ -147,35 +148,38 @@
 		</div>
 	</footer>
 
-	<!-- Модальное окно -->
-		<div class="popup">
-			<div class="popup-dialog">
-				<div class="popup-content">
-					<button class="popup-close">&times;</button>
-					<h3 class="popup-header">Оставьте заявку <br> и мы свяжемся с Вами</h3>
-					<div class="popup-form-block">
-						<form action="#" class="popup-form">
+<!-- Модальное окно -->
+	<div class="popup">
+		<div class="popup-dialog">
+			<div class="popup-content">
+				<button class="popup-close">&times;</button>
+				<h3 class="popup-header">Оставьте заявку <br> и мы свяжемся с Вами</h3>
+				<div class="popup-form-block">
+					<form action="telegram.php" method="POST" class="popup-form">
 
-							<div class="input-box">
-								<input type="text" id="name" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
-								<label for="name" class="popup-form-label">Ваше имя</label>
-							</div>
+						<div class="input-box">
+							<input type="text" id="name" name="user_name" class="popup-form-input" pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
+							<label for="name" class="popup-form-label">Ваше имя</label>
+						</div>
 
-							<div class="input-box">
-								<input type="number" id="phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
-								<label for="phone" class="popup-form-label">Ваш телефон</label>
-							</div>
+						<div class="input-box">
+							<input type="number" id="phone" name="user_phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
+							<label for="phone" class="popup-form-label">Ваш телефон</label>
+						</div>
 
-							<button class="popup-form-btn main-btn">Отправить</button>
+						<button class="popup-form-btn main-btn social_btn" type="submit">Отправить</button>
 
-						</form>
-					</div>
+					</form>
 				</div>
 			</div>
 		</div>
-	<script src="js/jquery-3.6.3.min.js"></script>
+	</div>
 
-	<!-- модальное окно -->
+<!-- Подключение js -->
+	<script src="js/jquery-3.6.3.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+
+<!-- модальное окно инициация -->
 	<script>
 		$(document).ready(function(){
 					// модальное окно ОСТАВИТЬ ЗАЯВКУ
