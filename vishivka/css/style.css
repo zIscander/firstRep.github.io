@@ -335,6 +335,9 @@ hr {
           box-shadow: -6px 6px 15px #8761ff;
 }
 
+.portfolio .title {
+  text-align: left;
+}
 .portfolio::after {
   content: "";
   background: url(../img/logo.png) no-repeat bottom right/cover;
@@ -528,6 +531,9 @@ hr {
   font-size: 1.2rem;
   text-align: center;
 }
+.footer__txt:last-child {
+  text-align: right;
+}
 .footer-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -657,6 +663,26 @@ hr {
     height: 20rem;
   }
 
+  .portfolio-slider__img-nav {
+    height: 9rem;
+    width: 9rem;
+  }
+  .portfolio-slider_nav {
+    width: 100%;
+  }
+  .portfolio-slider_nav .slick-track, .portfolio-slider_nav .slick-list {
+    height: 10rem;
+  }
+  .portfolio .arrow {
+    bottom: -11rem;
+  }
+  .portfolio .next {
+    left: 0;
+  }
+  .portfolio .prev {
+    right: 0;
+  }
+
   .contacts__block {
     min-height: 9.5rem;
   }
@@ -684,6 +710,23 @@ hr {
   .services__post-img {
     width: 13rem;
     height: 13rem;
+  }
+
+  .portfolio-slider__img-nav {
+    height: 7rem;
+    width: 7rem;
+  }
+  .portfolio-slider_nav .slick-track, .portfolio-slider_nav .slick-list {
+    height: 8rem;
+  }
+  .portfolio .arrow {
+    bottom: -10rem;
+  }
+  .portfolio .next {
+    left: -4rem;
+  }
+  .portfolio .prev {
+    right: -4rem;
   }
 
   .video {
@@ -733,6 +776,10 @@ hr {
     border-radius: 5rem;
   }
 
+  .portfolio .title {
+    text-align: center;
+  }
+
   .info::after {
     background: none;
   }
@@ -752,6 +799,10 @@ hr {
     font-size: 3.6rem;
   }
 
+  .footer__txt:last-child {
+    margin-top: 1rem;
+    text-align: center;
+  }
   .footer-block::before {
     right: 45%;
   }
@@ -786,6 +837,22 @@ hr {
     height: 19rem;
   }
 
+  .portfolio-slider_nav .slick-track, .portfolio-slider_nav .slick-list {
+    height: 8rem;
+  }
+  .portfolio .arrow {
+    width: 3rem;
+    height: 3rem;
+    bottom: -3.5rem;
+    font-size: 1.8rem;
+  }
+  .portfolio .next {
+    left: 0;
+  }
+  .portfolio .prev {
+    right: 0;
+  }
+
   .contacts .main-link_contacts .fi {
     font-size: 3.2rem;
   }
@@ -804,6 +871,9 @@ hr {
     font-size: 0.9rem;
     font-weight: 700;
   }
+  .main-link::after {
+    bottom: -1.35rem;
+  }
   .main-link_info {
     font-size: 1.4rem;
   }
@@ -817,6 +887,27 @@ hr {
     font-size: 2rem;
   }
 
+  .portfolio-slider__img-nav {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2rem;
+  }
+  .portfolio-slider_nav .slick-track, .portfolio-slider_nav .slick-list {
+    height: 6rem;
+  }
+  .portfolio .arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: -3.5rem;
+    font-size: 1.6rem;
+  }
+  .portfolio .next {
+    left: -1rem;
+  }
+  .portfolio .prev {
+    right: -1rem;
+  }
+
   .footer-block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -825,7 +916,11 @@ hr {
   .footer-block::before, .footer-block::after {
     top: 18.5%;
   }
-  .footer__txt {
-    margin-top: 1rem;
+
+  .popup-dialog {
+    width: 30rem;
+  }
+  .popup-header {
+    font-size: 2rem;
   }
 }

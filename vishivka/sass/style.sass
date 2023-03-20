@@ -260,6 +260,8 @@ hr
 
 // Портфолио
 .portfolio
+	.title
+		text-align: left
 	&::after
 		content: ''
 		background: url(../img/logo.png) no-repeat bottom right / cover
@@ -395,6 +397,8 @@ hr
 		color: $txt
 		font-size: 1.2rem
 		text-align: center
+		&:last-child
+			text-align: right
 	&-block
 		display: flex
 		justify-content: space-evenly
@@ -495,6 +499,22 @@ hr
 		&__post-img
 			width: 20rem
 			height: 20rem
+	.portfolio
+		&-slider
+			&__img
+				&-nav
+					height: 9rem
+					width: 9rem
+			&_nav
+				width: 100%
+				.slick-track, .slick-list
+					height: 10rem
+		.arrow
+			bottom: -11rem
+		.next
+			left: 0
+		.prev
+			right: 0
 	.contacts
 		&__block
 			min-height: 9.5rem
@@ -516,6 +536,21 @@ hr
 		&__post-img
 			width: 13rem
 			height: 13rem
+	.portfolio
+		&-slider
+			&__img
+				&-nav
+					height: 7rem
+					width: 7rem
+			&_nav
+				.slick-track, .slick-list
+					height: 8rem
+		.arrow
+			bottom: -10rem
+		.next
+			left: -4rem
+		.prev
+			right: -4rem
 	.video
 		height: 40rem
 		width: 40rem
@@ -552,6 +587,9 @@ hr
 		text-align: center
 		border: 1px solid rgba($color-btn, 0.3)
 		border-radius: 5rem
+	.portfolio
+		.title
+			text-align: center
 	.info
 		&::after
 			background: none
@@ -567,6 +605,10 @@ hr
 			.fi
 				font-size: 3.6rem
 	.footer
+		&__txt
+			&:last-child
+				margin-top: 1rem
+				text-align: center
 		&-block
 			&::before
 				right: 45%
@@ -593,6 +635,21 @@ hr
 			margin-bottom: 2rem
 			width: 19rem
 			height: 19rem
+	.portfolio
+		&-slider
+			&__img
+			&_nav
+				.slick-track, .slick-list
+					height: 8rem
+		.arrow
+			width: 3rem
+			height: 3rem
+			bottom: -3.5rem
+			font-size: 1.8rem
+		.next
+			left: 0
+		.prev
+			right: 0
 	.contacts
 		.main-link_contacts
 			.fi
@@ -608,6 +665,8 @@ hr
 	.main-link
 		font-size: 0.9rem
 		font-weight: 700
+		&::after
+			bottom: -1.35rem
 		&_info
 			font-size: 1.4rem
 	.slick-slider .slick-track, .slick-slider .slick-list
@@ -615,14 +674,35 @@ hr
 		width: 32rem
 	.fi
 		font-size: 2rem
+	.portfolio
+		&-slider
+			&__img
+				&-nav
+					width: 5rem
+					height: 5rem
+					border-radius: 2rem
+			&_nav
+				.slick-track, .slick-list
+					height: 6rem
+		.arrow
+			width: 2.5rem
+			height: 2.5rem
+			bottom: -3.5rem
+			font-size: 1.6rem
+		.next
+			left: -1rem
+		.prev
+			right: -1rem
 	.footer
 		&-block
 			justify-content: space-between
 			&::before, &::after
 				top: 18.5%
-				
-		&__txt
-			margin-top: 1rem
+	.popup
+		&-dialog
+			width: 30rem
+		&-header
+			font-size: 2rem
 
 
 
