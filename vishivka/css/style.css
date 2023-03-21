@@ -531,9 +531,6 @@ hr {
   font-size: 1.2rem;
   text-align: center;
 }
-.footer__txt:last-child {
-  text-align: right;
-}
 .footer-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -547,7 +544,7 @@ hr {
   height: 0.1rem;
   width: 40%;
   position: absolute;
-  top: 25%;
+  top: 29%;
   background-color: rgba(0, 0, 0, 0.3);
 }
 .footer-block::before {
@@ -753,6 +750,9 @@ hr {
   .main-link {
     font-size: 1.3rem;
   }
+  .main-link::after {
+    bottom: -1.35rem;
+  }
 
   .about::after, .portfolio::after, .services::after {
     background: none;
@@ -803,6 +803,9 @@ hr {
     margin-top: 1rem;
     text-align: center;
   }
+  .footer-block::before, .footer-block::after {
+    top: 4rem;
+  }
   .footer-block::before {
     right: 45%;
   }
@@ -814,6 +817,9 @@ hr {
   .main-link {
     font-size: 1rem;
     font-weight: 600;
+  }
+  .main-link::after {
+    bottom: -1.33rem;
   }
   .main-link_info {
     font-size: 1.4rem;
@@ -872,7 +878,7 @@ hr {
     font-weight: 700;
   }
   .main-link::after {
-    bottom: -1.35rem;
+    bottom: -1.3rem;
   }
   .main-link_info {
     font-size: 1.4rem;
