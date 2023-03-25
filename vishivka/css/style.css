@@ -294,7 +294,7 @@ hr {
 }
 .about__item {
   font-size: 1.7rem;
-  margin: 1rem auto;
+  margin: 1rem auto 1rem -2rem;
 }
 
 .services .title {
@@ -310,15 +310,6 @@ hr {
   bottom: 16%;
   opacity: 0.4;
   z-index: -1;
-}
-.services__img {
-  width: 100%;
-  max-height: 25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 3rem;
-  -webkit-box-shadow: -6px 6px 15px #8761ff;
-          box-shadow: -6px 6px 15px #8761ff;
 }
 .services__post-block {
   margin: 0 0 5rem;
