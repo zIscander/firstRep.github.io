@@ -409,7 +409,23 @@ hr
 			left: 38%
 			transform: translateX(50%)
 
-
+// Спасибо
+.thx
+	height: 100vh
+	display: flex
+	flex-direction: column
+	align-items: center
+	&::after
+		content: ''
+		background: url(../img/logo.png) no-repeat bottom right / cover
+		position: fixed
+		height: 60rem
+		width: 60rem
+		left: -32rem
+		bottom: 16%
+		transform: scale(-1, 1)
+		opacity: 0.4
+		z-index: -1
 
 
 // Модальное окно
@@ -546,7 +562,7 @@ hr
 	.video
 		height: 40rem
 		width: 40rem
-		
+
 	.contacts
 		&__block
 			min-height: 11rem
@@ -611,6 +627,10 @@ hr
 				right: 45%
 			&::after
 				left: 45%
+	.thx
+		
+		&::after
+			display: none
 
 // Экраны XS
 @media (max-width: 575px)
