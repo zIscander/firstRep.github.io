@@ -411,10 +411,16 @@ hr
 
 // Спасибо
 .thx
-	height: 100vh
+	height: 70vh
 	display: flex
 	flex-direction: column
 	align-items: center
+	justify-content: center
+	.title_thx
+		font-family: 'Lobster', cursive
+		font-size: 3.5rem
+		margin-bottom: 1.6rem
+		text-align: center
 	&::after
 		content: ''
 		background: url(../img/logo.png) no-repeat bottom right / cover
@@ -424,7 +430,7 @@ hr
 		left: -32rem
 		bottom: 16%
 		transform: scale(-1, 1)
-		opacity: 0.4
+		opacity: 1
 		z-index: -1
 
 
@@ -628,7 +634,6 @@ hr
 			&::after
 				left: 45%
 	.thx
-		
 		&::after
 			display: none
 
