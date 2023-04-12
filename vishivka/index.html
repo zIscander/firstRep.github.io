@@ -5,17 +5,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Добро пожаловать в мир исполнения желаний! Вышивка на заказ по вашему макету в Екатеринбурге!">
 	<meta name="keywords" content="Vishivka, Вышивка, вышивка на заказ по вашему макету, шеврон, печать флексом, флоком">
-	<link rel="icon" href="img/logo120.ico" type="image/x-icon" sizes="120x120">
-	<link rel="icon" href="img/logo.svg" type="image/svg" sizes="120x120">
-
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
 	<meta name="yandex-verification" content="09f6bc050cdd7dac" />
-	<title>Vishivka_196</title>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+	<link rel="icon" href="img/logo.svg" type="image/svg" sizes="120x120">
+	<link rel="icon" href="img/logo120.ico" type="image/x-icon" sizes="120x120">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+	<link rel="manifest" href="img/site.webmanifest">
+
+	<title>Vishivka 196</title>
+
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/uicons-brands.css">
 	<link rel="stylesheet" href="css/uicons-solid-rounded.css">
@@ -185,12 +187,12 @@
 					<form action="telegram.php" method="POST" class="popup-form">
 
 						<div class="input-box">
-							<input type="text" id="name" name="user_name" class="popup-form-input" pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
+							<input type="text" id="name" name="user_name" class="popup-form-input" pattern="[а-яА-Я]{2,20}" title="Поле должно содержать только русские буквы!" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
 							<label for="name" class="popup-form-label">Ваше имя</label>
 						</div>
 
 						<div class="input-box">
-							<input type="number" id="phone" name="user_phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
+							<input type="tel" id="phone" name="user_phone" class="popup-form-input" pattern="[0-9]{11}" title="Поле должно содержать 11 цифр телефона!" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
 							<label for="phone" class="popup-form-label">Ваш телефон</label>
 						</div>
 

@@ -191,12 +191,12 @@
 						<form action="telegram.php" method="POST" class="popup-form">
 
 						<div class="input-box">
-							<input type="text" id="name" name="user_name" class="popup-form-input" pattern="[а-яА-Я]+" title="Поле должно содержать только русские буквы" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
+							<input type="text" id="name" name="user_name" class="popup-form-input" pattern="[а-яА-Я]{2,20}" title="Поле должно содержать только русские буквы!" required autocomplete="off"><i class="fi popup-form__fi fi-sr-picpeople-filled"></i>
 							<label for="name" class="popup-form-label">Ваше имя</label>
 						</div>
 
 						<div class="input-box">
-							<input type="number" id="phone" name="user_phone" class="popup-form-input" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
+							<input type="tel" id="phone" name="user_phone" class="popup-form-input" pattern="[0-9]{11}" title="Поле должно содержать 11 цифр телефона!" required autocomplete="off"><i class="fi popup-form__fi fi-sr-call-incoming"></i>
 							<label for="phone" class="popup-form-label">Ваш телефон</label>
 						</div>
 
