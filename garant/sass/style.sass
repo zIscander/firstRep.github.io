@@ -1,0 +1,403 @@
+// Анимация 
+@keyframes lights 
+	0% 
+		color: #09203f
+		text-shadow: 0 0 1em hsla(229, 1%, 1%, 0.2), 0 0 0.125em hsla(229, 1%, 1%, 0.3), -1em -0.125em 0.5em hsla(229, 1%, 1%, 0), 1em 0.125em 0.5em hsla(229, 1%,1%, 0)
+
+
+	30%  
+		color: #09203f
+		text-shadow: 0 0 1em hsla(229, 1%, 1%, 0.5), 0 0 0.125em hsla(229, 1%, 1%, 0.5), -0.5em -0.125em 0.25em hsla(229, 1%, 1%, 0.2), 0.5em 0.125em 0.25em hsla(229, 1%,1%, 0.4)
+
+
+	40% 
+		color: #09203f
+		text-shadow: 0 0 1em hsla(229, 1%, 1%, 0.5), 0 0 0.125em hsla(229, 1%, 1%, 0.5), -0.25em -0.125em 0.125em hsla(229, 1%, 1%, 0.2), 0.25em 0.125em 0.125em hsla(229, 1%,1%, 0.4)
+
+
+	70% 
+		color: #09203f
+		text-shadow: 0 0 1em hsla(229, 1%, 1%, 0.5), 0 0 0.125em hsla(229, 1%, 1%, 0.5), 0.5em -0.125em 0.25em hsla(229, 1%, 1%, 0.2), -0.5em 0.125em 0.25em hsla(229, 1%,1%, 0.4)
+
+
+	100% 
+		color: #09203f
+		text-shadow: 0 0 1em hsla(229, 1%, 1%, 0.2), 0 0 0.125em hsla(229, 1%, 1%, 0.3), 1em -0.125em 0.5em hsla(229, 1%, 1%, 0), -1em 0.125em 0.5em hsla(229, 1%,1%, 0)
+ 
+
+// Цвета 
+$color-act: linear-gradient(120deg, #f6d365 0%, #fda085 100%)
+$color-txt: #09203f
+$color-bg: #f0f0f0
+
+
+
+.red
+	color: red
+
+// Общие свойства
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	outline: none
+
+html 
+	font-size: 10px
+body
+	font-family: 'Philosopher', sans-serif
+	color: $color-txt
+	overflow-x: hidden
+h1,h2,h3,h4,h5 
+	margin: 0
+	padding: 0
+
+a, a:focus, a:visited, a:hover
+	text-decoration: none
+	color: $color-txt
+ul
+	list-style: none
+
+.wrap-bg
+	padding: 0.5rem
+	background: $color-act
+	text-align: center
+	border-bottom-left-radius: 5rem
+	border-bottom-right-radius: 5rem
+	&_r
+		display: flex
+		justify-content: space-around
+		padding: 0.5rem
+		background: $color-act
+		text-align: center
+		border-bottom-left-radius: 5rem
+
+.section-header
+	padding: 10rem 0 5rem 0	
+	text-align: center
+
+.title
+	margin-bottom: 5rem
+	font-size: 4rem
+	font-weight: 700
+	text-align: center
+	&_e 
+		animation: lights 5s 750ms linear infinite
+.sub-title
+	line-height: 1.8
+	font-size: 2rem
+.description
+	padding: 3rem 
+	text-align: center
+	font-size: 2rem
+
+.form
+	text-align: center
+	&-input
+		padding: 0 1.5rem
+		height: 4rem
+		width: 24rem
+		font-size: 1.8rem
+		border: 1px solid $color-txt
+		border-radius: 0.5rem
+	&-btn
+		padding: .8rem 1.6rem
+		font-size: 1.6rem
+		background: #f6d365
+		border-radius: 0.5rem
+		transition: all 0.5s
+		&:hover
+			background: #fda085
+
+// Слйдер
+.slick-prev:before, .slick-next:before 
+	color: $color-txt
+
+
+
+// Навигация
+.header
+	position: fixed
+	top: 0
+	width: 100%
+	height: 4rem
+	z-index: 2
+.nav
+	display: block
+	position: relative
+	top: -3rem
+	left: -3rem
+	height: 7rem
+	width: 7rem
+	background: $color-act
+	border-radius: 50%
+	transition: 0.5s
+	&__btn
+		display: block
+		position: relative
+		top: 0rem
+		left: 0rem
+		height: 7rem
+		width: 7rem
+		border-radius: 50%
+		z-index: 2
+		transition: 0.5s
+		cursor: pointer
+		&_active
+			height: 3rem
+			width: 3rem
+			top: 2.5rem
+			left: 31.5rem
+	&_active
+		border-radius: 0
+		height: 50vh
+		width: 25vw
+		border-bottom-right-radius: 50%
+	&__span
+		display: block
+		position: absolute
+		margin: -0.1rem 0 0 -0.8rem
+		width: 1.2rem
+		height: 0.2rem
+		background-color: $color-txt
+		top: 4.4rem
+		left: 4.4rem
+		transition: 0.5s
+		&::after, &::before
+			content: ''
+			position: absolute
+			width: 1.6rem
+			height: 0.2rem
+			background-color: $color-txt
+			left: 0
+			transition: 0.5s
+		&::after
+			bottom: 0.5rem
+		&::before
+			top: 0.5rem
+		&_active
+			top: 2rem
+			left: 1.7rem
+			background: $color-act
+			&::after
+				height: 0.2rem
+				transform: rotate(40deg)
+				transform-origin: left
+			&::before
+				height: 0.2rem
+				transform-origin: left
+				transform: rotate(-40deg)
+	&-list
+		position: absolute
+		top: 25%
+		left: 8%
+	&-link
+		display: inline-block
+		position: relative
+		padding: 0
+		margin-bottom: 2rem
+		color: $color-txt
+		font-size: 2rem
+		transform: translate(-60rem, -30rem)
+		transition: 0.4s
+		opacity: 0
+		&:hover
+			color: $color-txt
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 0.15rem
+			background-color: $color-txt
+			transform: scaleX(0)
+			transition: .4s
+		&::before
+			transform-origin: left
+			top: 2.8rem
+		&::after
+			transform-origin: right
+			top: 0.1rem
+		&:hover::before, &:hover::after
+			transform: scaleX(1)
+		&_active
+			color: $color-txt
+			transform: translate(0, 0)
+			opacity: 1
+		&_r
+			display: inline
+			position: relative
+			color: $color-txt
+			font-size: 1.7rem
+			&::before, &::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 0.15rem
+				background-color: $color-txt
+				transform: scaleX(0)
+				transition: .4s
+			&::before
+				transform-origin: left
+				top: 2.3rem
+			&::after
+				transform-origin: right
+				top: 0.1rem
+			&:hover::before, &:hover::after
+				transform: scaleX(1)
+
+// Первая секция main
+.main
+	margin: -1rem	auto	
+	width: 100%
+	height: 100vh
+	background: url('../img/main-bg_o.png') no-repeat center / cover
+	.section-header
+		padding: 20rem 0 10rem
+
+	&__form
+	&__input
+		width: 60%
+		margin-right: 2rem
+
+	
+// Вторая секция about
+.about
+	background-color: $color-bg
+	&__form
+		margin-bottom: 8rem
+	&__input
+		margin-right: 2rem
+.feedbacks
+	background-color: #fafafa
+	width: 100%
+	box-shadow: 0 10px 20px rgba(0,0,0,0.4)
+	&__item
+		padding: 0 3rem 0 0
+	&__img
+		width: 50rem
+		height: 30rem
+		object-fit: cover
+	&__name
+		margin-top: 2rem
+		font-size: 3rem
+
+// Третья секция ads
+.ads
+	min-height: 100vh
+	background: $color-act
+	&__block
+		position: relative
+		height: 35rem
+		background-color: $color-bg
+		border-radius: 0.5rem
+		overflow: hidden
+		transition: .6s
+		&:hover
+			height: 40rem
+			transform: scale(1.03)
+			box-shadow: 0 10px 20px rgba(0,0,0,0.4)
+		&:hover .ads__price, &:hover .ads__btn
+			transform: translateY(0)
+	&__img
+		width: 100%
+		height: 20rem
+		object-fit: cover	
+		border-top-right-radius: 0.5rem
+		border-top-left-radius: 0.5rem
+	&__adress
+		padding: 0 2rem
+		font-size: 1.6rem
+		color: lighten($color-txt,40%)
+	&__value
+		padding: 1rem 2rem
+		font-weight: 700
+		font-size: 2rem
+	&__price
+		padding: 2.2rem 2rem
+		width: 100%
+		font-size: 1.6rem
+		display: inline-block
+		background: linear-gradient(0deg, #aaa 0%, transparent 100%)
+		transform: translateY(7rem)	
+		transition: .5s				
+	&__btn
+		display: inline-block
+		position: absolute
+		top: 34.5rem
+		right: 1rem
+		transition: .5s
+		transform: translateY(7rem)			
+
+
+
+
+
+
+// Footer
+.footer
+	padding: 1rem 0
+	background: $color-act
+	font-size: 1.2rem
+	&__block
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: space-around
+	&__link	
+		position: relative
+		font-size: 1.4rem
+		cursor: pointer
+		&::before, &::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 0.15rem
+			background-color: $color-txt
+			transform: scaleX(0)
+			transition: .4s
+		&::before
+			transform-origin: left
+			top: 1.6rem
+		&::after
+			transform-origin: right
+			top: -0.1rem
+		&:hover::before, &:hover::after
+			transform: scaleX(1)
+	&__p
+		text-align: center
+
+// Медиа запросы 
+
+// Экраны LG
+@media (max-width: 1199px)
+
+
+// Экраны MD
+@media (max-width: 991px)
+
+
+// Экраны SM
+@media (max-width: 767px)
+
+
+// Экраны XS
+@media (max-width: 575px)
+
+
+// Экран айфон 12 про
+@media (max-width: 390px)
+
+
+
+
+
