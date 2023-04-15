@@ -34,7 +34,9 @@
 
 			<div class="col-2">
 				<nav class="nav">
-				<a class="nav__btn"><span class="nav__span"></span></a>
+				<div class="wrap-bg_l">
+					<a class="nav__btn"><span class="nav__span"></span><h4 class="nav__h4">Меню</h4></a>
+				</div>
 				<ul class="nav-list">
 					<li class="nav-list__item"><a class="nav-link" href="#">«ГАРАНТ РИЕЛТОР»</a></li>
 					<li class="nav-list__item"><a class="nav-link" href="#">Ипотека</a></li>
@@ -52,8 +54,14 @@
 				
 			<div class="col-2 offset-2">
 				<div class="wrap-bg_r">
-					<a class="nav-link_r" href="#">Вход</a>
-					<a class="nav-link_r" href="#">Регистрация</a>
+					<a class="nav-link_r" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Вход</a>
+					<a class="nav-link_r" data-bs-toggle="modal" data-bs-target="#staticBackdrop" href="#">Регистрация</a>
+				</div>
+			</div>
+			<div class="col-2 offset-2 d-none">
+				<div class="wrap-bg_r">
+					<a class="nav-link_r" href="#">Пользователь</a>
+					<a class="nav-link_r" href="#">Выход</a>
 				</div>
 			</div>
 
@@ -293,5 +301,58 @@
 	});
 	</script>
 	
+
+<!-- Модальное окно -->
+
+<!-- Вход регистрация -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body">
+				<div class="row">
+          <div class="col-6">
+          	<form class="form enter-form" action="#" method="POST">
+							<label class="label enter-label" for="#">Логин</label>
+	           	<input class="form-input enter-input" type="text">
+							<label class="label enter-label" for="#">Пароль</label>	           	
+	           	<input class="form-input enter-input" type="text">
+	           	<input class="form-btn enter-btn" type="submit" value="Войти">
+	           	<input class="form-btn enter-btn" type="submit" value="Зарегистрироваться">
+	          </form>
+	        </div>
+	        <div class="col-6">
+	        	<div class="enter-description"></div>
+	        </div>
+        </div> 
+
+	 				<div class="row">
+	 	        <div class="col-6">
+	 	        	<div class="enter-description"></div>
+	 	        </div>
+           <div class="col-6">
+           	<form class="form enter-form" action="#" method="POST">
+ 							<label class="label enter-label" for="#">Имя</label>
+ 	           	<input class="form-input reg-input" type="text">
+ 	           	<label class="label enter-label" for="#">Отчество</label>
+ 	           	<input class="form-input reg-input" type="text">
+ 	           	<label class="label enter-label" for="#">Логин</label>
+ 	           	<input class="form-input reg-input" type="text">
+ 							<label class="label enter-label" for="#">Пароль</label>	           
+ 	           	<input class="form-input reg-input" type="text">
+ 							<label class="label enter-label" for="#">Повторите пароль</label>	 	           	
+ 							<input class="form-input reg-input" type="text">
+ 							<label class="label enter-label" for="#">Введите эл. почту</label>	           
+ 	           	<input class="form-input reg-input" type="text">
+ 	           	<input class="form-btn enter-btn" type="submit" value="Войти">
+ 	           	<input class="form-btn enter-btn" type="submit" value="Зарегистрироваться">
+ 	          </form>
+ 	        </div>
+         </div>              
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>

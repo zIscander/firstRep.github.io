@@ -35,6 +35,7 @@ $color-bg: #f0f0f0
 .red
 	color: red
 
+
 // Общие свойства
 *
 	box-sizing: border-box
@@ -75,6 +76,15 @@ ul
 		background: $color-act
 		text-align: center
 		border-bottom-left-radius: 5rem
+	&_l
+		display: flex
+		justify-content: space-around
+		height: 4rem
+		padding: 0.5rem
+		background: $color-act
+		text-align: center
+		border-bottom-right-radius: 5rem
+		transition: .5s
 
 .section-header
 	padding: 10rem 0 5rem 0	
@@ -129,43 +139,49 @@ ul
 .nav
 	display: block
 	position: relative
-	top: -3rem
-	left: -3rem
-	height: 7rem
-	width: 7rem
-	background: $color-act
-	border-radius: 50%
+	top: 0rem
+	left: 0rem
+	width: 12rem
+	// background: $color-act
+	border-bottom-right-radius: 50%
 	transition: 0.5s
-	&__btn
-		display: block
-		position: relative
+	&__h4
+		position: absolute
 		top: 0rem
+		left: 3rem
+		font-size: 1.8rem
+		transition: .5s
+	&__btn
+		position: relative
+		top: .3rem
 		left: 0rem
-		height: 7rem
-		width: 7rem
-		border-radius: 50%
+		height: 3rem
+		width: 9rem
+		border-radius: 20%
 		z-index: 2
 		transition: 0.5s
 		cursor: pointer
 		&_active
-			height: 3rem
-			width: 3rem
 			top: 2.5rem
-			left: 31.5rem
+			left: 15.5rem
+			.nav__h4
+				top: -1.7rem
+				left: -4rem
 	&_active
 		border-radius: 0
-		height: 50vh
-		width: 25vw
+		height: 30rem
+		width: 30rem
 		border-bottom-right-radius: 50%
+		.wrap-bg_l
+				height: 30rem
 	&__span
-		display: block
+		display: inline-block
 		position: absolute
-		margin: -0.1rem 0 0 -0.8rem
 		width: 1.2rem
 		height: 0.2rem
 		background-color: $color-txt
-		top: 4.4rem
-		left: 4.4rem
+		top: 1rem
+		left: 0rem
 		transition: 0.5s
 		&::after, &::before
 			content: ''
@@ -180,7 +196,7 @@ ul
 		&::before
 			top: 0.5rem
 		&_active
-			top: 2rem
+			top: -.6rem
 			left: 1.7rem
 			background: $color-act
 			&::after
@@ -193,8 +209,8 @@ ul
 				transform: rotate(-40deg)
 	&-list
 		position: absolute
-		top: 25%
-		left: 8%
+		top: 16%
+		left: 6%
 	&-link
 		display: inline-block
 		position: relative
@@ -203,7 +219,7 @@ ul
 		color: $color-txt
 		font-size: 2rem
 		transform: translate(-60rem, -30rem)
-		transition: 0.4s
+		transition: 0.7s
 		opacity: 0
 		&:hover
 			color: $color-txt
@@ -376,6 +392,41 @@ ul
 	&__p
 		text-align: center
 
+// Модальные окна
+.btn-close
+	position: absolute
+	right: -2rem
+	top: 1rem
+	color: #fff
+.modal
+	&-body
+		margin: 0
+		padding: 0
+	&-content
+.enter
+	&-form
+		padding: 8rem 2rem
+		height: 100%
+	&-label
+		font-size: 1.6rem
+	&-input
+
+		display: block
+		width: 75%
+		margin: 1rem auto 3rem
+	&-btn
+		display: inline-block
+		margin: auto
+		margin: 1rem .5rem 2rem
+	&-description
+		background: $color-txt
+		height: 100%
+		width: 100%
+.reg
+	&-input
+		display: block
+		width: 75%
+		margin: 1rem auto
 // Медиа запросы 
 
 // Экраны LG
